@@ -9,7 +9,7 @@
   - url: https://doi.org/10.1007/978-3-032-18070-4_8  | pdf: https://arxiv.org/pdf/2606.27979v1
   - relevance: core — disaggregated なトランザクショナルKVストア。DRAM/SSD/HDD/NVM 横断の stash 管理はメモリ階層×TPの中心課題
 
-- [ ] **BtrLog: Low-Latency Logging for Cloud Database Systems** — Maximilian Kuschewski et al., arXiv, 2026
+- [x] **BtrLog: Low-Latency Logging for Cloud Database Systems** — Maximilian Kuschewski et al., PVLDB 19(10) (PDF 記載; DBLP 未収載), 2026
   - id: doi:10.14778/3828612.3828640  | added: 2026-07-06 | via: weekly-sweep
   - url: http://arxiv.org/abs/2606.27051v2  | pdf: https://arxiv.org/pdf/2606.27051v2
   - relevance: core — クラウドDB向け低遅延WAL。リモートストレージ上のロギングは WAL/durability の中心課題
