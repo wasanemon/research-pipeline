@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 skills/paper-collection/scripts/fetch_paper.py --help)",
+      "Bash(python3 skills/paper-collection/scripts/fetch_paper.py dblp-search \"DaMoN 2026\" --max 5)"
+    ]
+  }
+}

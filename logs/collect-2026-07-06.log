@@ -1,0 +1,54 @@
+[08:07:35] arxiv_csdb: 48 papers in last 10 days (cap 250)
+[08:07:39] arxiv_dcos: 10 papers in last 10 days (cap 200)
+[08:07:42] PVLDB: 67 entries (2026)
+[08:07:46] SIGMOD: 91 entries (2026)
+[08:07:48] ICDE: 34 entries (2026)
+[08:08:06] FETCH-FAILED dblp EDBT: FETCH-FAILED after 3 attempts: https://dblp.org/search/publ/api?q=stream%3Astreams/conf/edbt%3A%20year%3A2026%3A&h=1000&format=json ([Errno 54] Connection reset by peer)
+[08:08:24] FETCH-FAILED dblp CIDR: FETCH-FAILED after 3 attempts: https://dblp.org/search/publ/api?q=stream%3Astreams/conf/cidr%3A%20year%3A2026%3A&h=1000&format=json ([Errno 54] Connection reset by peer)
+[08:08:41] FETCH-FAILED dblp TODS: FETCH-FAILED after 3 attempts: https://dblp.org/search/publ/api?q=stream%3Astreams/journals/tods%3A%20year%3A2026%3A&h=1000&format=json ([Errno 54] Connection reset by peer)
+[08:08:59] FETCH-FAILED dblp VLDB-Journal: FETCH-FAILED after 3 attempts: https://dblp.org/search/publ/api?q=stream%3Astreams/journals/vldb%3A%20year%3A2026%3A&h=1000&format=json ([Errno 54] Connection reset by peer)
+[08:09:16] FETCH-FAILED dblp DaMoN: FETCH-FAILED after 3 attempts: https://dblp.org/search/publ/api?q=stream%3Astreams/conf/damon%3A%20year%3A2026%3A&h=1000&format=json ([Errno 54] Connection reset by peer)
+[08:09:34] FETCH-FAILED dblp EuroSys: FETCH-FAILED after 3 attempts: https://dblp.org/search/publ/api?q=stream%3Astreams/conf/eurosys%3A%20year%3A2026%3A&h=1000&format=json ([Errno 54] Connection reset by peer)
+[08:09:52] FETCH-FAILED dblp SOSP: FETCH-FAILED after 3 attempts: https://dblp.org/search/publ/api?q=stream%3Astreams/conf/sosp%3A%20year%3A2026%3A&h=1000&format=json ([Errno 54] Connection reset by peer)
+[08:10:10] FETCH-FAILED dblp OSDI: FETCH-FAILED after 3 attempts: https://dblp.org/search/publ/api?q=stream%3Astreams/conf/osdi%3A%20year%3A2026%3A&h=1000&format=json ([Errno 54] Connection reset by peer)
+[08:10:27] FETCH-FAILED dblp USENIX-ATC: FETCH-FAILED after 3 attempts: https://dblp.org/search/publ/api?q=stream%3Astreams/conf/usenix%3A%20year%3A2026%3A&h=1000&format=json ([Errno 54] Connection reset by peer)
+[08:10:45] FETCH-FAILED dblp FAST: FETCH-FAILED after 3 attempts: https://dblp.org/search/publ/api?q=stream%3Astreams/conf/fast%3A%20year%3A2026%3A&h=1000&format=json ([Errno 54] Connection reset by peer)
+[08:10:45] PVLDB: 13 keyword-matched / 54 dropped by prefilter
+[08:10:45] SIGMOD: 16 keyword-matched / 75 dropped by prefilter
+[08:10:45] ICDE: 5 keyword-matched / 29 dropped by prefilter
+[08:10:45] DONE. failures=10
+[08:10:45]   FETCH-FAILED dblp_EDBT: FETCH-FAILED after 3 attempts: https://dblp.org/search/publ/api?q=stream%3Astreams/conf/edbt%3A%20year%3A2026%3A&h=1000&format=json ([Errno 54] Connection reset by peer)
+[08:10:45]   FETCH-FAILED dblp_CIDR: FETCH-FAILED after 3 attempts: https://dblp.org/search/publ/api?q=stream%3Astreams/conf/cidr%3A%20year%3A2026%3A&h=1000&format=json ([Errno 54] Connection reset by peer)
+[08:10:45]   FETCH-FAILED dblp_TODS: FETCH-FAILED after 3 attempts: https://dblp.org/search/publ/api?q=stream%3Astreams/journals/tods%3A%20year%3A2026%3A&h=1000&format=json ([Errno 54] Connection reset by peer)
+[08:10:45]   FETCH-FAILED dblp_VLDB-Journal: FETCH-FAILED after 3 attempts: https://dblp.org/search/publ/api?q=stream%3Astreams/journals/vldb%3A%20year%3A2026%3A&h=1000&format=json ([Errno 54] Connection reset by peer)
+[08:10:45]   FETCH-FAILED dblp_DaMoN: FETCH-FAILED after 3 attempts: https://dblp.org/search/publ/api?q=stream%3Astreams/conf/damon%3A%20year%3A2026%3A&h=1000&format=json ([Errno 54] Connection reset by peer)
+[08:10:45]   FETCH-FAILED dblp_EuroSys: FETCH-FAILED after 3 attempts: https://dblp.org/search/publ/api?q=stream%3Astreams/conf/eurosys%3A%20year%3A2026%3A&h=1000&format=json ([Errno 54] Connection reset by peer)
+[08:10:45]   FETCH-FAILED dblp_SOSP: FETCH-FAILED after 3 attempts: https://dblp.org/search/publ/api?q=stream%3Astreams/conf/sosp%3A%20year%3A2026%3A&h=1000&format=json ([Errno 54] Connection reset by peer)
+[08:10:45]   FETCH-FAILED dblp_OSDI: FETCH-FAILED after 3 attempts: https://dblp.org/search/publ/api?q=stream%3Astreams/conf/osdi%3A%20year%3A2026%3A&h=1000&format=json ([Errno 54] Connection reset by peer)
+[08:10:45]   FETCH-FAILED dblp_USENIX-ATC: FETCH-FAILED after 3 attempts: https://dblp.org/search/publ/api?q=stream%3Astreams/conf/usenix%3A%20year%3A2026%3A&h=1000&format=json ([Errno 54] Connection reset by peer)
+[08:10:45]   FETCH-FAILED dblp_FAST: FETCH-FAILED after 3 attempts: https://dblp.org/search/publ/api?q=stream%3Astreams/conf/fast%3A%20year%3A2026%3A&h=1000&format=json ([Errno 54] Connection reset by peer)
+[08:11:25] cooling down 60 s before retrying DBLP ...
+[08:12:26] EDBT: 100 entries (2026), 10 keyword-matched
+[08:12:39] CIDR: 36 entries (2026), 7 keyword-matched
+[08:12:50] TODS: 18 entries (2026), 4 keyword-matched
+[08:13:01] VLDB-Journal: 28 entries (2026), 4 keyword-matched
+[08:13:24] DaMoN: 0 entries (2026), 0 keyword-matched — probe 2025: stream OK, no 2026 content yet
+[08:13:38] EuroSys: 100 entries (2026), 29 keyword-matched
+[08:14:05] SOSP: 0 entries (2026), 0 keyword-matched — probe 2025: stream OK, no 2026 content yet
+[08:14:28] OSDI: 0 entries (2026), 0 keyword-matched — probe 2025: stream OK, no 2026 content yet
+[08:14:51] USENIX-ATC: 0 entries (2026), 0 keyword-matched — probe 2025: stream OK, no 2026 content yet
+[08:15:03] FAST: 44 entries (2026), 35 keyword-matched
+[08:15:03] DONE. still failed: none
+[08:17:45] PVLDB: @total=67, fetched=67, kept=67 (was 67), matched=13
+[08:17:57] SIGMOD: @total=92, fetched=92, kept=91 (was 91), matched=16
+[08:18:09] ICDE: @total=35, fetched=35, kept=34 (was 34), matched=5
+[08:18:33] EDBT: @total=133, fetched=133, kept=131 (was 100), matched=15
+[08:18:45] CIDR: @total=37, fetched=37, kept=36 (was 36), matched=7
+[08:18:57] TODS: @total=18, fetched=18, kept=18 (was 18), matched=4
+[08:19:10] VLDB-Journal: @total=28, fetched=28, kept=28 (was 28), matched=4
+[08:19:37] EuroSys: @total=139, fetched=139, kept=138 (was 100), matched=39
+[08:19:49] FAST: @total=45, fetched=45, kept=44 (was 44), matched=35
+[08:19:49] DONE
+[08:24:04] accepted=83, dups skipped=0
+[08:24:04] fetching 78 BibTeX entries from DBLP at 10 s spacing (~13 min) ...
+[08:38:17] DONE: queue+83 entries (core 36 / adjacent 31 / borderline 16), bib+83 (0 failed)
