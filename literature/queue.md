@@ -24,7 +24,7 @@
   - url: https://www.vldb.org/pvldb/vol19/p1142-ding.pdf  | pdf: none
   - relevance: core — HTAP の isolation-freshness トレードオフをストレージ最適化で扱う(HTAP/isolation)
 
-- [ ] **How to Write to SSDs** — Bohyun Lee et al., Proc. VLDB Endow., 2026
+- [x] **How to Write to SSDs** — Bohyun Lee et al., Proc. VLDB Endow., 2026
   - id: dblp:journals/pvldb/LeeZL26  | added: 2026-07-06 | via: weekly-sweep
   - url: https://www.vldb.org/pvldb/vol19/p1469-lee.pdf  | pdf: none
   - relevance: core — SSD 書き込みパスの検討。ストレージエンジンの I/O 階層設計に直結
