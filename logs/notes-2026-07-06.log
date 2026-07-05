@@ -1,0 +1,21 @@
+[08:48:01] OK: 2025-tpctc-gao-distash (5128 KB) from https://arxiv.org/pdf/2606.27979v1
+[08:48:04] OK: 2026-arxiv-kuschewski-btrlog (1492 KB) from https://arxiv.org/pdf/2606.27051v2
+[08:48:08] OK: 2026-arxiv-egorov-flintkv (1485 KB) from https://arxiv.org/pdf/2607.02401v1
+[08:48:12] OK: 2026-pvldb-ding-isolation-freshness-htap (1435 KB) from https://www.vldb.org/pvldb/vol19/p1142-ding.pdf
+[08:48:16] OK: 2026-pvldb-lee-how-to-write-to-ssds (2562 KB) from https://www.vldb.org/pvldb/vol19/p1469-lee.pdf
+[08:48:19] OK: 2026-pvldb-liu-arcekv (1964 KB) from https://www.vldb.org/pvldb/vol19/p958-liu.pdf
+[08:48:24] OK: 2026-pvldb-zhang-terark-ds (1369 KB) from https://www.vldb.org/pvldb/vol19/p822-zhang.pdf
+[08:48:42] OK: 2026-pvldb-zhao-sidle (4293 KB) from https://www.vldb.org/pvldb/vol19/p1499-zhao.pdf
+[08:48:45] OK: 2026-pvldb-weng-pisco (1652 KB) from https://www.vldb.org/pvldb/vol19/p1413-weng.pdf
+[08:48:49] OK: 2026-pvldb-wu-aqd (4010 KB) from https://www.vldb.org/pvldb/vol19/p1586-wu.pdf
+[08:48:51] extracted: 2025-tpctc-gao-distash (11 pages, 45 KB text)
+[08:48:54] extracted: 2026-arxiv-kuschewski-btrlog (14 pages, 77 KB text)
+[08:48:55] extracted: 2026-arxiv-egorov-flintkv (16 pages, 79 KB text)
+[08:48:58] extracted: 2026-pvldb-ding-isolation-freshness-htap (14 pages, 78 KB text)
+[08:49:06] extracted: 2026-pvldb-lee-how-to-write-to-ssds (15 pages, 85 KB text)
+[08:49:08] extracted: 2026-pvldb-liu-arcekv (15 pages, 84 KB text)
+[08:49:10] extracted: 2026-pvldb-zhang-terark-ds (14 pages, 75 KB text)
+[08:49:14] extracted: 2026-pvldb-zhao-sidle (17 pages, 115 KB text)
+[08:49:16] extracted: 2026-pvldb-weng-pisco (14 pages, 88 KB text)
+[08:49:17] extracted: 2026-pvldb-wu-aqd (14 pages, 64 KB text)
+[08:49:17] DONE. failed=none

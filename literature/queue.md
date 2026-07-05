@@ -4,7 +4,7 @@
 
 <!-- weekly-sweep 2026-07-06: arXiv cs.DB/cs.DC/cs.OS last 10 days + DBLP monitored venues year:2026 -->
 
-- [ ] **DiStash: A Disaggregated Multi-Stash Transactional Key-Value Store** — Yiming Gao et al., TPCTC (LNCS, Springer), 2025
+- [x] **DiStash: A Disaggregated Multi-Stash Transactional Key-Value Store** — Yiming Gao et al., TPCTC (LNCS, Springer), 2025
   - id: doi:10.1007/978-3-032-18070-4_8  | added: 2026-07-06 | via: weekly-sweep
   - url: https://doi.org/10.1007/978-3-032-18070-4_8  | pdf: https://arxiv.org/pdf/2606.27979v1
   - relevance: core — disaggregated なトランザクショナルKVストア。DRAM/SSD/HDD/NVM 横断の stash 管理はメモリ階層×TPの中心課題
