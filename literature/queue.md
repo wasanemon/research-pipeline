@@ -19,7 +19,7 @@
   - url: http://arxiv.org/abs/2607.02401v1  | pdf: https://arxiv.org/pdf/2607.02401v1
   - relevance: core — NVM前提の durable ストレージエンジン。トランザクション等のDB向けインタフェース保証を扱う
 
-- [ ] **Breaking the Isolation-Freshness Trade-off: Joint Adaptive Storage Optimization for HTAP Systems** — Zhenghao Ding et al., Proc. VLDB Endow., 2026
+- [x] **Breaking the Isolation-Freshness Trade-off: Joint Adaptive Storage Optimization for HTAP Systems** — Zhenghao Ding et al., Proc. VLDB Endow., 2026
   - id: dblp:journals/pvldb/DingZZSXLD26  | added: 2026-07-06 | via: weekly-sweep
   - url: https://www.vldb.org/pvldb/vol19/p1142-ding.pdf  | pdf: none
   - relevance: core — HTAP の isolation-freshness トレードオフをストレージ最適化で扱う(HTAP/isolation)
