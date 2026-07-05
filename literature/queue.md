@@ -14,7 +14,7 @@
   - url: http://arxiv.org/abs/2606.27051v2  | pdf: https://arxiv.org/pdf/2606.27051v2
   - relevance: core — クラウドDB向け低遅延WAL。リモートストレージ上のロギングは WAL/durability の中心課題
 
-- [ ] **FlintKV: A Fast Durable Storage Engine for Modern Databases** — Sergey Egorov et al., arXiv, 2026
+- [x] **FlintKV: A Fast Durable Storage Engine for Modern Databases** — Sergey Egorov et al., arXiv, 2026
   - id: arxiv:2607.02401  | added: 2026-07-06 | via: weekly-sweep
   - url: http://arxiv.org/abs/2607.02401v1  | pdf: https://arxiv.org/pdf/2607.02401v1
   - relevance: core — NVM前提の durable ストレージエンジン。トランザクション等のDB向けインタフェース保証を扱う
