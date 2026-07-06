@@ -19,9 +19,7 @@ hashmap、DeadIndex = 成長ドメイン対応 HINT)。さらにメモリ予算 
 SOTA(Timeline index、MVB-tree、te-HINT)比で桁違いの総時間短縮を主張し、空間は版数に
 線形 (abstract, §9)。著者らの SIGMOD 版 LIT 論文 [19] の拡張版ジャーナル論文 (§1)。
 
-- [question] 掲載タイトルは "lighting-fast" だが、先行版 [19] のタイトルは
-  "LIT: lightning-fast in-memory temporal indexing" (p.25, ref 19)。掲載文字列を
-  そのまま採用したが、おそらく "lightning-fast" の誤植。
+- [paper] 掲載タイトルは実際に `Scalable lighting-fast temporal indexing` であり、本ノートも published title に合わせてその表記を採用する (p.1)。先行版 [19] のタイトルは `LIT: lightning-fast in-memory temporal indexing` で綴りが異なるため初見では紛らわしいが、ジャーナル版タイトル自体は source の表記に従う (p.1, ref. 19)。
 
 ## Problem & motivation
 - [paper] temporal database は DB の進化を追跡し、過去時点(または期間)における DB
@@ -219,7 +217,7 @@ SOTA(Timeline index、MVB-tree、te-HINT)比で桁違いの総時間短縮を主
   以後 HINT を採用。
 - Pure time-travel [paper] (Fig. 14, Table 6, Table 7, §9.2.2): LIT が全ストリームで
   総時間最良、ほぼ全ケースで Timeline が2位、te-HINT が最下位(例外 WILDFIRES)。
-  クエリは LIT・te-HINT が Timeline より常に低コスト(te-HINT は LIT より常に遅い)。
+  クエリは LIT・te-HINT がTimeline より常に低コスト(te-HINT は LIT より常に遅い)。
   更新は Timeline が最良で LIT が競争的(TAXIS: Timeline 12.3s、LIT 22.89s = Live 14.5 +
   Dead 8.43)、te-HINT はレベル間の区間移動コストで桁違いに遅い(TAXIS 1886s)(Table 6)。
 - a-LIT チューニング [paper] (Table 8, Table 9, §9.2.3): LiveIndex の 2D R-tree は削除
@@ -338,3 +336,4 @@ SOTA(Timeline index、MVB-tree、te-HINT)比で桁違いの総時間短縮を主
 
 ## Changelog
 - 2026-07-06: created (status: read)
+- 2026-07-06: verification pass clarified that the published journal title itself uses `lighting-fast`
