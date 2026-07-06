@@ -419,12 +419,12 @@
   - url: https://www.usenix.org/conference/fast26/presentation/kim-jungae  | pdf: none
   - relevance: borderline — Zoned UFS のクロスレイヤ最適化(zoned storage は LSM 研究と関係するがモバイル向け)
 
-- [ ] **FoundationDB: A Distributed Unbundled Transactional Key Value Store** — Jingyu Zhou et al., SIGMOD Conference, 2021
+- [x] **FoundationDB: A Distributed Unbundled Transactional Key Value Store** — Jingyu Zhou et al., SIGMOD Conference, 2021
   - id: doi:10.1145/3448016.3457559  | added: 2026-07-06 | via: citation-of 2025-tpctc-gao-distash
   - url: https://doi.org/10.1145/3448016.3457559  | pdf: none
   - relevance: core — DiStash の基盤・BtrLog も引用する分散トランザクショナル KV。unbundled アーキテクチャの基準文献
 
-- [ ] **Moving on From Group Commit: Autonomous Commit Enables High Throughput and Low Latency on NVMe SSDs** — Lam-Duy Nguyen et al., Proc. ACM Manag. Data, 2025
+- [x] **Moving on From Group Commit: Autonomous Commit Enables High Throughput and Low Latency on NVMe SSDs** — Lam-Duy Nguyen et al., Proc. ACM Manag. Data, 2025
   - id: doi:10.1145/3725328  | added: 2026-07-06 | via: citation-of 2026-pvldb-kuschewski-btrlog
   - url: https://doi.org/10.1145/3725328  | pdf: none
   - relevance: core — BtrLog の end-to-end 評価の土台となる commit プロトコル(WAL/commit 系の中心文献)
@@ -434,7 +434,7 @@
   - url: https://doi.org/10.1145/3694715.3695983  | pdf: none
   - relevance: adjacent — BtrLog が対置する遅延束縛型 shared log(ARIES 非互換とされる設計点の一次文献)
 
-- [ ] **Milliscale: Fast Commit on Low-Latency Object Storage** — Jiatang Zhou et al., arXiv, 2026
+- [x] **Milliscale: Fast Commit on Low-Latency Object Storage** — Jiatang Zhou et al., arXiv, 2026
   - id: arxiv:2603.02108  | added: 2026-07-06 | via: citation-of 2026-pvldb-kuschewski-btrlog
   - url: http://arxiv.org/abs/2603.02108v1  | pdf: https://arxiv.org/pdf/2603.02108v1
   - relevance: core — 低遅延オブジェクトストレージ(S3 Express)上の commit。BtrLog と相補する設計点
