@@ -49,7 +49,7 @@
   - url: https://www.vldb.org/pvldb/vol19/p1413-weng.pdf  | pdf: none
   - relevance: core — トランザクション分離バグのケース縮約・重複排除。isolation テスティングは serializability 研究に直結
 
-- [ ] **AQD: Online Adaptive Query Dispatcher for HTAP Databases** — Yang Wu et al., Proc. VLDB Endow., 2026
+- [x] **AQD: Online Adaptive Query Dispatcher for HTAP Databases** — Yang Wu et al., Proc. VLDB Endow., 2026
   - id: dblp:journals/pvldb/WuLZWYZXZ26  | added: 2026-07-06 | via: weekly-sweep
   - url: https://www.vldb.org/pvldb/vol19/p1586-wu.pdf  | pdf: none
   - relevance: core — HTAP DB 向け適応的クエリディスパッチ(HTAP)
