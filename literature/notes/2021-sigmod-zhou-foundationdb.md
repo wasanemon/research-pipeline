@@ -73,3 +73,4 @@ LogServer の追加で水平スケールする構成を示す (Fig. 1, §2.3.2, 
 
 ## Changelog
 - 2026-07-06: created (status: read)
+- 2026-07-06: verification pass checked metadata, architecture summary, and headline performance numbers against the SIGMOD PDF; no immediate factual correction identified

@@ -77,3 +77,4 @@ Milliscale は、S3 Express One Zone のような **low-latency mutable object s
 
 ## Changelog
 - 2026-07-06: created (status: read)
+- 2026-07-06: verification pass checked S3 Express latency assumptions, RDL design summary, and headline tail-latency numbers against the arXiv source; no immediate factual correction identified

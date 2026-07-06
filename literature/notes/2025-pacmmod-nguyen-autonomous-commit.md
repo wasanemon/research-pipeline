@@ -76,3 +76,4 @@ throughput も競合を上回るケースが多い (Fig. 9, Fig. 10, Fig. 12, Fi
 
 ## Changelog
 - 2026-07-06: created (status: read)
+- 2026-07-06: verification pass checked headline latency/throughput claims and commit-path summary against the public PDF; no immediate factual correction identified
