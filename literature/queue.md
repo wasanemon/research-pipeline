@@ -139,7 +139,7 @@
   - url: https://doi.org/10.1007/s00778-025-00950-8  | pdf: none
   - relevance: core — B-tree 圧縮技術の評価(ストレージエンジン/索引の実証研究)
 
-- [ ] **FUR: Fast and Unlimited Reads on Persistent Memory Transactions** — João Barreto et al., EuroSys, 2026
+- [x] **FUR: Fast and Unlimited Reads on Persistent Memory Transactions** — João Barreto et al., EuroSys, 2026
   - id: doi:10.1145/3767295.3769343  | added: 2026-07-06 | via: weekly-sweep
   - url: https://doi.org/10.1145/3767295.3769343  | pdf: none
   - relevance: core — 永続メモリ・トランザクションの高速読み出し(PM×CC)
