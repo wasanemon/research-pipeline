@@ -28,7 +28,7 @@ tags: [htap, query-dispatch, dual-engine, polardb, learned-database, bandit, res
 - [paper] Workload-Level Dispatch はオフライン完全情報でも NP-hard(Appendix A)(§2.1.2)。
 
 ## System model & assumptions
-- [paper] 対象はデュアルエンジン型 HTAP(TiDB+TiFlash、PolarDB、HeatWave 等)。
+- [paper] 対象はデュアルエンジン型 HTAP(TiDB+TiFlash、PolarDB、HeatWave 等)(§1)。
   PolarDB 構成: proxy + TP クラスタ(RW/RO)+ AP クラスタ。AQD は RW ノード上で
   最適化器特徴と各ノードのハートビート(CPU/メモリ)を観測して判定 (§2.3)。
 - [paper] 定式化: query-level は二値分類(regret = レイテンシ差 × 誤選択)、workload-level は
@@ -98,3 +98,4 @@ tags: [htap, query-dispatch, dual-engine, polardb, learned-database, bandit, res
 
 ## Changelog
 - 2026-07-06: created (status: read, PVLDB 公式 PDF を読解。§5 後半〜§7 は要点のみ)
+- 2026-07-06: 検証パスによる修正(System model のデュアルエンジン例示のアンカーを §2.3 → §1 に訂正。PolarDB 構成の記述は §2.3 のまま)

@@ -30,15 +30,16 @@ tags: [lsm-tree, compaction, write-stall, dynamic-workload, rocksdb, key-value-s
   同一レベル内のラン間はタイムスタンプ重複可。コンパクションは下方向のみ (§3.1, Fig. 4)。
 - [paper] write stall はコンパクションから分離され、全ラン数 s が閾値 c を超えたときに
   レート k で遅延させる独立ノブ (§3.1)。
-- [paper] コストモデルは当初シングル前景スレッド+1バックグラウンドワーカーを仮定し、
-  マルチスレッドは Amdahl 則(並列化率 φ=0.5)で補正 (§3.4)。
-- [paper] Bloom filter FPR α、ブロック I/O 時間 I_r=12us / I_w=15us は実測プロファイルで
-  設定 (§5)。
+- [paper] コストモデルは当初シングル前景スレッド+1バックグラウンドワーカーを仮定し
+  (§3.2)、マルチスレッドは Amdahl 則(並列化率 φ=0.5、プロファイルで設定)で補正 (§4)。
+- [paper] ブロック I/O 時間 I_r=12us / I_w=15us は実測プロファイルで設定。Bloom filter は
+  全ベースラインで 10 bits-per-key(RocksDB デフォルト準拠)(§5)。
 
 ## Approach
 - [paper] **ElasticLSM**: 有効なコンパクション候補は3パターン — ①レベル内の複数ラン統合、
   ②隣接レベルへの統合、③複数レベル(i〜j)一括統合。候補爆発はサイズ昇順の増分列挙で
-  枝刈りし、レベル数≤8 の制約下で候補集合を 30us で構築 (§3.1)。
+  枝刈りし、レベル数<8(RocksDB のデフォルトは7レベル)の制約下で候補集合を 30us で
+  構築 (§3.1)。
 - [paper] **窓ベースコストモデル**: MemTable 1回分の更新数(u=F/E)を1「カウント窓」とし、
   窓内は木状態が安定と見なす。点検索 P(s)=(α(s−1)+1)·I_r、範囲検索 R(s)=s·I_r、
   更新 U(s)=flush I/O+k·1[s>c]。コンパクション(X バイト、y ラン削減)の完了窓 t は
@@ -60,7 +61,8 @@ tags: [lsm-tree, compaction, write-stall, dynamic-workload, rocksdb, key-value-s
   Leveling / Tiering / 1-Leveling(RocksDB デフォルト)/ LazyLeveling / Moose / Ruskey /
   CAMAL + 産業系(Pebble / WiredTiger / Cassandra)。複合ワークロード I(急変)と
   II(漸変)は各 2.4576億操作 (§5)。
-- [paper] 平均スループット: Workload I で 2.92×、II で 2.17×(対 Tiering 正規化)。
+- [paper] 平均スループット: Workload I で 2.92×、II で 2.17×(対 Tiering / LazyLeveling。
+  Fig. 9 の表は各列の最小値で正規化)。
   対 1-Leveling(最強ベースライン)では 2.00× / 1.41× (§1, Fig. 9)。
 - [paper] 適応速度: ワークロード変化後 2,000万操作以内、大きな遅延スパイクなし (§1)。
   B→D(激烈な書き→読み転換)のみ read 最適化系にわずかに劣る (§5.1)。
@@ -70,9 +72,11 @@ tags: [lsm-tree, compaction, write-stall, dynamic-workload, rocksdb, key-value-s
 - [paper] マルチスレッド(1/4/8/16)で最高スケーラビリティ。産業系比較: Cassandra /
   WiredTiger の 10× 超、Pebble の 3×。YCSB A〜F すべてでトップ(最小値正規化で
   1.89〜5.47×)(Fig. 10, Table 3)。
-- [inference] カバーされないもの: 空間増幅の明示的評価(スコアは読み書きコスト中心)、
-  複数 column family / 複数 bg ワーカーが標準の実運用構成(Moose フレームワーク制約で
-  bg 1 スレッド固定の比較が多い)、削除・TTL を含むワークロード。
+- [paper] 空間増幅も評価あり: workload J(新規更新 36GiB+重複 18GiB)で Leveling が最小、
+  ArceKV はそれに +0.05 差で追随 (Fig. 12(d), §5.2)。
+- [inference] カバーされないもの: 複数 column family / 複数 bg ワーカーが標準の実運用構成
+  (Moose フレームワーク制約で bg 1 スレッド固定の比較が多い)、削除・TTL を含む
+  ワークロード。
 
 ## Limitations
 - Stated [paper]: Ruskey/CAMAL はマルチスレッド評価から除外(メトリクス収集と同期機構の
@@ -105,3 +109,7 @@ tags: [lsm-tree, compaction, write-stall, dynamic-workload, rocksdb, key-value-s
 
 ## Changelog
 - 2026-07-06: created (status: read, PVLDB 公式 PDF を読解)
+- 2026-07-06: 検証パスによる修正(レベル数上限を「<8」に訂正、Bloom filter を BPK=10 固定
+  に訂正し「α をプロファイルで設定」の誤りを除去、Amdahl 補正のアンカーを §3.4→§4 に修正、
+  スループット正規化基準を Tiering/LazyLeveling(列最小値)に訂正、空間増幅は Fig. 12(d) で
+  評価済みのため「未カバー」リストから削除し [paper] 項目として追加)

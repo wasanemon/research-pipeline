@@ -24,7 +24,7 @@ Terark-DS(ByteDance TerarkDB 拡張)は、ファイル種別ごとの**差別化
   消費 (§1, §3.1, Fig. 3)。
 - [paper] KV 分離(TerarkDB)は書きを 3.8× 改善するがローカル比 44.9% の差が残り、
   リモートアクセスで GC レイテンシが 2.03× に伸びて空間増幅が 1.51×(ローカル)→
-  1.96×(分離)に悪化(RocksDB は両環境で 1.12×)(§3.2, Fig. 4)。
+  1.96×(分離)に悪化(RocksDB は両環境で 1.12×)(§1, §3.2, Fig. 4)。
 - [paper] 既存の分離向け LSM(Disag-RocksDB、CaaS、MirrorKV)はパラメタ調整・
   コンパクションオフロード・KV 分離統合のいずれかに留まり、ネットワーク起因の
   根本課題が残る (§1)。
@@ -32,7 +32,7 @@ Terark-DS(ByteDance TerarkDB 拡張)は、ファイル種別ごとの**差別化
 ## System model & assumptions
 - [paper] ByteDance の分離ストレージ(MetaServer 3 + ChunkServer 6、25Gbps NIC、
   star-topology 書き込み)上で動作。ページキャッシュによる WAL 緩衝は分離環境では
-  使えず、全 WAL レコードが RPC 永続化される前提 (§3.1.2, §5.1)。
+  使えず、全 WAL レコードが RPC 永続化される前提 (§3.1.1-§3.1.2, §5.1)。
 - [paper] 冗長化の選択肢: N 複製(容量・帯域 N×、低遅延)vs EC M:(N−1)(容量 (M+N−1)/M、
   小 I/O の読み・修復が遅い)(Table 1)。
 - [paper] KV 分離の3ファイル種のアクセス特性: WAL=追記のみ・短命・読みは復旧時のみ、
@@ -106,3 +106,4 @@ Terark-DS(ByteDance TerarkDB 拡張)は、ファイル種別ごとの**差別化
 
 ## Changelog
 - 2026-07-06: created (status: read, PVLDB 公式 PDF を読解)
+- 2026-07-06: 検証パスによる修正(セクションアンカー2件を訂正: GC レイテンシ 2.03× の出典は §1、star-topology 書き込みの記述は §3.1.1。数値・主張自体は全件ソースと一致)

@@ -48,7 +48,7 @@ DBMS の書き込みは DB 層(doublewrite 等)と SSD 内部(GC)で乗算的に
   14.5–36.5%)+ best-fit ビンパッキングで 4KiB 境界に整列 → 1 PID = 1回の 4KiB 読み。
   4KiB がレイテンシ/IOPS 最良の読み単位であることを4機種の FIO 実測で確認。
 - [paper] **GDT(deathtime グルーピング)** (§4): ページヘッダに書き込みタイムスタンプ
-  履歴(直近 n=4)を持ち、EDT = current_lsn + (WHn−WH1)/(n−1) で次回無効化時刻を外挿。
+  履歴(直近 n 回、論文の例示値は n=4)を持ち、EDT = current_lsn + (WHn−WH1)/(n−1) で次回無効化時刻を外挿。
   類似 EDT のページを同一ゾーンに配置し、GC も EDT 順で再配置。初回書き込みは
   B-tree index ID でグループ化。
 - [paper] **DB と SSD の GC 単位整合** (§5.3): FDP なら Reclaim Unit サイズを直接取得、
@@ -65,7 +65,7 @@ DBMS の書き込みは DB 層(doublewrite 等)と SSD 内部(GC)で乗算的に
 ## Evaluation
 - Setup [paper]: enterprise SSD 8機種(5ベンダ)、YCSB-A (zipf 0.8) と TPC-C 15,000WH、
   バッファプールはデータセットの 5–20%、累積書き込み≥容量4×で定常状態化 (§7.1)。
-- [paper] PM9A3 / 800GB: Total WAF 4.72→0.60(7.8×)。スループット 229K→535K OPS。
+- [paper] PM9A3 (894GB) / データセット 800GB: Total WAF 4.72→0.60(7.8×)。スループット 229K→535K OPS。
   内訳: DB WAF 2.00(in-place)→4.06(素朴 oop)→0.62(+圧縮)→0.59(+GDT)→0.60(+NoWA、
   補償書き込み分)、SSD WAF 2.36→1.94→1.07(+NoWA)→1.00(+GC単位整合)(Table 1, Fig. 13)。
 - [paper] 機種横断: Total WAF 改善 6.2×(Solidigm)〜9.76×(Kioxia)。SSD WAF は
@@ -114,3 +114,4 @@ DBMS の書き込みは DB 層(doublewrite 等)と SSD 内部(GC)で乗算的に
 
 ## Changelog
 - 2026-07-06: created (status: read, PVLDB 公式 PDF を読解)
+- 2026-07-06: 検証パスによる修正(GDT の履歴長 n=4 を論文どおり例示値に緩和、PM9A3 実験のデバイス容量 894GB とデータセット 800GB の区別を明記)

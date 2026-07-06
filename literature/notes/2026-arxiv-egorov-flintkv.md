@@ -22,7 +22,7 @@ durable linearizability を保証しつつ両 API をネイティブ提供する
 ## Problem & motivation
 - [paper] RocksDB/PebbleDB/LevelDB 級の API(snapshot、consistent iterator、atomic batch)は
   トランザクション実装の基盤(CockroachDB/TiDB は WriteBatch で分散トランザクションの
-  原子性を実現)だが、NVM KV ストアでこれを完全提供するのは PMemRocksDB のみ (§2.1, Table 1-2)。
+  原子性を実現)だが、NVM KV ストアでこれを完全提供するのは PMemRocksDB のみ (§2.1-2.2, Table 1-2)。
 - [paper] PMemRocksDB は SSD 設計の並行性制御を流用しており、write group リーダーが
   グループ全員の memtable 挿入完了を待つ設計が staging tier の並列性を制限する (§2.2)。
 - [paper] 最新 NVM KV ストアは capacity tier の write stall をほぼ解消したため、ボトルネックは
@@ -31,7 +31,7 @@ durable linearizability を保証しつつ両 API をネイティブ提供する
 ## System model & assumptions
 - [paper] FIFO ストアバッファのメモリモデル(PTSO 系)+ CLWB / SFENCE / MFENCE (§2.3)。
 - [paper] 正しさの基準は durable linearizability(Izraelevitz らの定義: crash を除去した履歴が
-  linearizable、線形化済み операция は persist 済み)(§3.1)。
+  linearizable、線形化済み操作は persist 済み)(§3.1)。
 - [paper] ハイブリッド構成: DRAM に skiplist インデックス(IndexNode)、NVM に永続
   リンクリスト(NVMNode: KV ペア+後続ポインタ)(§3.2, Fig. 2)。
 - [paper] 評価環境: dual Xeon Gold 6326、Intel Optane PMEM 496GiB (fsdax)、単一 NUMA
@@ -107,3 +107,4 @@ durable linearizability を保証しつつ両 API をネイティブ提供する
 
 ## Changelog
 - 2026-07-06: created (status: read, arXiv v1 を読解)
+- 2026-07-06: 検証パスによる修正(文字化け「операция」→「操作」を修正、PMemRocksDB のみが完全 API を提供する旨のアンカーを §2.1 → §2.1-2.2 に精緻化。数値・ベンチマーク claim 20件以上をソーステキストと照合し、他はすべて一致)
