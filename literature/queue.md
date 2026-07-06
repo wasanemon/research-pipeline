@@ -129,7 +129,7 @@
   - url: https://vldb.org/cidrdb/2026/rose-flexible-replication-with-strong-semantics-for-partitioned-databases.html  | pdf: none
   - relevance: core — パーティション DB 向けの強いセマンティクスのレプリケーション
 
-- [ ] **Update NDP: On Offloading Modifications to Smart Storage with Transactional Guarantees in Near-Data Processing DBMS** — Arthur Bernhardt et al., ACM Trans. Database Syst., 2026
+- [x] **Update NDP: On Offloading Modifications to Smart Storage with Transactional Guarantees in Near-Data Processing DBMS** — Arthur Bernhardt et al., ACM Trans. Database Syst., 2026
   - id: doi:10.1145/3774753  | added: 2026-07-06 | via: weekly-sweep
   - url: https://doi.org/10.1145/3774753  | pdf: none
   - relevance: core — near-data processing DBMS でトランザクション保証付き更新オフロード(NDP×TP)
