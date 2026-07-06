@@ -164,7 +164,7 @@
   - url: https://www.usenix.org/conference/fast26/presentation/bian  | pdf: none
   - relevance: core — 分散ログ構造化ストレージの GC(ByteDance 産業論文、log-structured)
 
-- [ ] **Holistic and Automated Task Scheduling for Distributed LSM-tree-based Storage** — Yuanming Ren et al., FAST, 2026
+- [x] **Holistic and Automated Task Scheduling for Distributed LSM-tree-based Storage** — Yuanming Ren et al., FAST, 2026
   - id: dblp:conf/fast/RenS00L26  | added: 2026-07-06 | via: weekly-sweep
   - url: https://www.usenix.org/conference/fast26/presentation/ren  | pdf: none
   - relevance: core — 分散 LSM ストレージのタスクスケジューリング(LSM-tree)
