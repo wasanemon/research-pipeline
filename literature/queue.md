@@ -109,7 +109,7 @@
   - url: https://doi.org/10.48786/edbt.2026.58  | pdf: none
   - relevance: core — エンタープライズ in-memory DBMS での CXL メモリプール動的割当(CXL/disaggregated)
 
-- [ ] **AdCache: Adaptive Cache Management with Admission Control for LSM-tree Key-Value Stores** — Jiarui Ye et al., EDBT, 2026
+- [x] **AdCache: Adaptive Cache Management with Admission Control for LSM-tree Key-Value Stores** — Jiarui Ye et al., EDBT, 2026
   - id: doi:10.48786/EDBT.2026.12  | added: 2026-07-06 | via: weekly-sweep
   - url: https://doi.org/10.48786/edbt.2026.12  | pdf: none
   - relevance: core — LSM KV ストア向け適応キャッシュ管理(LSM×バッファ管理)
