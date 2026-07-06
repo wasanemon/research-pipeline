@@ -149,7 +149,7 @@
   - url: https://doi.org/10.1145/3767295.3803598  | pdf: none
   - relevance: core — RDMA 加速の分散ロック(ロック/分散 CC)
 
-- [ ] **A Logically Disaggregated Cache for Replicated Storage Systems** — Kiran Hombal et al., EuroSys, 2026
+- [x] **A Logically Disaggregated Cache for Replicated Storage Systems** — Kiran Hombal et al., EuroSys, 2026
   - id: doi:10.1145/3767295.3803608  | added: 2026-07-06 | via: weekly-sweep
   - url: https://doi.org/10.1145/3767295.3803608  | pdf: none
   - relevance: core — レプリケートされたストレージ向け論理 disaggregated キャッシュ
