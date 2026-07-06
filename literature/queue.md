@@ -184,7 +184,7 @@
   - url: https://www.usenix.org/conference/fast26/presentation/zhao  | pdf: none
   - relevance: core — クラウドブロックストア向け高速コンパクト索引 RASK(索引×ストレージ)
 
-- [ ] **TVA: A Version-aware Temporal Graph Storage System for Real-time Analytics** — Wenhao Li et al., arXiv, 2026
+- [x] **TVA: A Version-aware Temporal Graph Storage System for Real-time Analytics** — Wenhao Li et al., arXiv, 2026
   - id: arxiv:2607.00406  | added: 2026-07-06 | via: weekly-sweep
   - url: http://arxiv.org/abs/2607.00406v1  | pdf: https://arxiv.org/pdf/2607.00406v1
   - relevance: adjacent — バージョン対応の時系列グラフ・ストレージシステム(ストレージエンジン設計だが対象はグラフ分析)
@@ -194,7 +194,7 @@
   - url: https://www.vldb.org/pvldb/vol19/p1484-li.pdf  | pdf: none
   - relevance: adjacent — ディスク常駐 ANN 索引の I/O 設計空間(索引×ディスク階層だが対象はベクトル検索) 【PRUNED 2026-07-06: 剪定で除外(人間確定)】
 
-- [ ] **Efficient Temporal Subgraph Management: A New Interval Index** — Dian Ouyang et al., Proc. VLDB Endow., 2026
+- [x] **Efficient Temporal Subgraph Management: A New Interval Index** — Dian Ouyang et al., Proc. VLDB Endow., 2026
   - id: dblp:journals/pvldb/OuyangWWZLL26  | added: 2026-07-06 | via: weekly-sweep
   - url: https://www.vldb.org/pvldb/vol19/p1170-wen.pdf  | pdf: none
   - relevance: adjacent — 時間的部分グラフ向け区間インデックス(索引だが対象はグラフ)
@@ -204,12 +204,12 @@
   - url: https://www.vldb.org/pvldb/vol19/p1128-ren.pdf  | pdf: none
   - relevance: adjacent — 永続 KV ストアでの動的アクセス制御(ストレージエンジン×セキュリティ) 【PRUNED 2026-07-06: 剪定で除外(人間確定)】
 
-- [ ] **LiBox: A Learned Index as an Array to Minimize Last-Mile Search** — Jian Zhou et al., Proc. VLDB Endow., 2026
+- [x] **LiBox: A Learned Index as an Array to Minimize Last-Mile Search** — Jian Zhou et al., Proc. VLDB Endow., 2026
   - id: dblp:journals/pvldb/ZhouWZZJ26  | added: 2026-07-06 | via: weekly-sweep
   - url: https://www.vldb.org/pvldb/vol19/p836-jiang.pdf  | pdf: none
   - relevance: adjacent — learned index のラストマイル探索最小化(索引)
 
-- [ ] **ByteGraph-Dione: An Adaptive Dual-Format Graph Engine with Hotspot Awareness and Transaction Efficiency for Production-Scale Workloads** — Chao Chen et al., SIGMOD Companion, 2026
+- [x] **ByteGraph-Dione: An Adaptive Dual-Format Graph Engine with Hotspot Awareness and Transaction Efficiency for Production-Scale Workloads** — Chao Chen et al., SIGMOD Companion, 2026
   - id: doi:10.1145/3788853.3803073  | added: 2026-07-06 | via: weekly-sweep
   - url: https://doi.org/10.1145/3788853.3803073  | pdf: none
   - relevance: adjacent — 本番規模グラフエンジン。トランザクション効率を扱う
@@ -224,27 +224,27 @@
   - url: https://doi.org/10.1145/3788853.3803090  | pdf: none
   - relevance: adjacent — TDSQL-Boundless: 大規模ヘテロワークロード向け分散 DB(産業論文) 【PRUNED 2026-07-06: 剪定で除外(人間確定)】
 
-- [ ] **RecDB: An LSM-Tree based Storage System for Training Large Recommendation Model in Low-Resource Scenarios** — Ming Gao et al., EDBT, 2026
+- [x] **RecDB: An LSM-Tree based Storage System for Training Large Recommendation Model in Low-Resource Scenarios** — Ming Gao et al., EDBT, 2026
   - id: doi:10.48786/EDBT.2026.37  | added: 2026-07-06 | via: weekly-sweep
   - url: https://doi.org/10.48786/edbt.2026.37  | pdf: none
   - relevance: adjacent — LSM ベースの学習用ストレージシステム(LSM エンジン、応用は推薦)
 
-- [ ] **DCSR: A Fast Data Structure with Leaf-Oriented Locks for Streaming Graph Processing** — Yue Shen et al., EDBT, 2026
+- [x] **DCSR: A Fast Data Structure with Leaf-Oriented Locks for Streaming Graph Processing** — Yue Shen et al., EDBT, 2026
   - id: doi:10.48786/EDBT.2026.29  | added: 2026-07-06 | via: weekly-sweep
   - url: https://doi.org/10.48786/edbt.2026.29  | pdf: none
   - relevance: adjacent — リーフ単位ロックの並行データ構造(並行性、対象はストリーミンググラフ)
 
-- [ ] **Declarative Memory Services** — Jerónimo Castrillón et al., CIDR, 2026
+- [x] **Declarative Memory Services** — Jerónimo Castrillón et al., CIDR, 2026
   - id: dblp:conf/cidr/CastrillonGHKSS26  | added: 2026-07-06 | via: weekly-sweep
   - url: https://vldb.org/cidrdb/2026/declarative-memory-services.html  | pdf: none
   - relevance: adjacent — 宣言的メモリサービス(メモリ階層のビジョン)
 
-- [ ] **Raster is Faster: Rethinking Ray Tracing in Database Indexing** — Harish Doraiswamy et al., CIDR, 2026
+- [x] **Raster is Faster: Rethinking Ray Tracing in Database Indexing** — Harish Doraiswamy et al., CIDR, 2026
   - id: dblp:conf/cidr/DoraiswamyH26  | added: 2026-07-06 | via: weekly-sweep
   - url: https://vldb.org/cidrdb/2026/raster-is-faster-rethinking-ray-tracing-in-database-indexing.html  | pdf: none
   - relevance: adjacent — レイトレーシング HW を DB 索引に使う再考(HW×索引)
 
-- [ ] **Hash Joins Meet CXL: A Fresh Look** — Wentao Huang et al., CIDR, 2026
+- [x] **Hash Joins Meet CXL: A Fresh Look** — Wentao Huang et al., CIDR, 2026
   - id: dblp:conf/cidr/HuangLT26  | added: 2026-07-06 | via: weekly-sweep
   - url: https://vldb.org/cidrdb/2026/hash-joins-meet-cxl-a-fresh-look.html  | pdf: none
   - relevance: adjacent — CXL 上のハッシュ結合の再検討(CXL×クエリ実行)
@@ -254,17 +254,17 @@
   - url: https://doi.org/10.1145/3774322  | pdf: none
   - relevance: adjacent — 投機実行による低遅延コンセンサス(一般のコンセンサス技術) 【PRUNED 2026-07-06: 剪定で除外(人間確定)】
 
-- [ ] **Mitigating False Positives in Filters: To Adapt or to Cache?** — Tianchi Mo et al., ACM Trans. Database Syst., 2026
+- [x] **Mitigating False Positives in Filters: To Adapt or to Cache?** — Tianchi Mo et al., ACM Trans. Database Syst., 2026
   - id: doi:10.1145/3786324  | added: 2026-07-06 | via: weekly-sweep
   - url: https://doi.org/10.1145/3786324  | pdf: none
   - relevance: adjacent — フィルタ(Bloom 等)の偽陽性対策: 適応 vs キャッシュ(ストレージエンジン部品)
 
-- [ ] **Scalable lighting-fast temporal indexing** — Panagiotis Simatis et al., VLDB J., 2026
+- [x] **Scalable lighting-fast temporal indexing** — Panagiotis Simatis et al., VLDB J., 2026
   - id: doi:10.1007/S00778-026-00968-6  | added: 2026-07-06 | via: weekly-sweep
   - url: https://doi.org/10.1007/s00778-026-00968-6  | pdf: none
   - relevance: adjacent — スケーラブルな時間インデックス(索引)
 
-- [ ] **PaCaR: Improved Buffered I/O Locality on NUMA Systems with Page Cache Replication** — Jérôme Coquisart et al., EuroSys, 2026
+- [x] **PaCaR: Improved Buffered I/O Locality on NUMA Systems with Page Cache Replication** — Jérôme Coquisart et al., EuroSys, 2026
   - id: doi:10.1145/3767295.3769359  | added: 2026-07-06 | via: weekly-sweep
   - url: https://doi.org/10.1145/3767295.3769359  | pdf: none
   - relevance: adjacent — NUMA でのページキャッシュ複製(OS レイヤのバッファ管理)
@@ -279,7 +279,7 @@
   - url: https://doi.org/10.1145/3767295.3803615  | pdf: none
   - relevance: adjacent — 複製状態機械の遅延マスキング(レプリケーション) 【PRUNED 2026-07-06: 剪定で除外(人間確定)】
 
-- [ ] **TierScape: Harnessing Multiple Compressed Tiers to Tame Server Memory TCO** — Sandeep Kumar et al., EuroSys, 2026
+- [x] **TierScape: Harnessing Multiple Compressed Tiers to Tame Server Memory TCO** — Sandeep Kumar et al., EuroSys, 2026
   - id: doi:10.1145/3767295.3769321  | added: 2026-07-06 | via: weekly-sweep
   - url: https://doi.org/10.1145/3767295.3769321  | pdf: none
   - relevance: adjacent — 圧縮メモリ多層化によるメモリ階層管理(tiering)
@@ -289,42 +289,42 @@
   - url: https://doi.org/10.1145/3767295.3769356  | pdf: none
   - relevance: adjacent — Intel DSA オフロードの透過的最適化(データ移動 HW、エンジンで利用され得る) 【PRUNED 2026-07-06: 剪定で除外(人間確定)】
 
-- [ ] **FicusDB: Scalable Multi-Versioned Authenticated Archival Storage** — Hongbo Zhang et al., EuroSys, 2026
+- [x] **FicusDB: Scalable Multi-Versioned Authenticated Archival Storage** — Hongbo Zhang et al., EuroSys, 2026
   - id: doi:10.1145/3767295.3803601  | added: 2026-07-06 | via: weekly-sweep
   - url: https://doi.org/10.1145/3767295.3803601  | pdf: none
   - relevance: adjacent — 多バージョンの authenticated アーカイブストレージ(バージョニング×ストレージ)
 
-- [ ] **ScaleSwap: A Scalable OS Swap System for All-Flash Swap Arrays** — Taehwan Ahn et al., FAST, 2026
+- [x] **ScaleSwap: A Scalable OS Swap System for All-Flash Swap Arrays** — Taehwan Ahn et al., FAST, 2026
   - id: dblp:conf/fast/AhnY0S26  | added: 2026-07-06 | via: weekly-sweep
   - url: https://www.usenix.org/conference/fast26/presentation/ahn  | pdf: none
   - relevance: adjacent — 全フラッシュ swap の OS スワップ機構(larger-than-memory の OS 側)
 
-- [ ] **Xerxes: Extensive Exploration of Scalable Hardware Systems with CXL-Based Simulation Framework** — Yuda An et al., FAST, 2026
+- [x] **Xerxes: Extensive Exploration of Scalable Hardware Systems with CXL-Based Simulation Framework** — Yuda An et al., FAST, 2026
   - id: dblp:conf/fast/AnY00ZZ000L026  | added: 2026-07-06 | via: weekly-sweep
   - url: https://www.usenix.org/conference/fast26/presentation/an  | pdf: none
   - relevance: adjacent — CXL ベースのシミュレーション基盤(CXL 研究のツール)
 
-- [ ] **UnICom: A Universally High-Performant I/O Completion Mechanism for Modern Computer Systems** — Riwei Pan et al., FAST, 2026
+- [x] **UnICom: A Universally High-Performant I/O Completion Mechanism for Modern Computer Systems** — Riwei Pan et al., FAST, 2026
   - id: dblp:conf/fast/Pan0NLGKX26  | added: 2026-07-06 | via: weekly-sweep
   - url: https://www.usenix.org/conference/fast26/presentation/pan  | pdf: none
   - relevance: adjacent — 汎用 I/O completion 機構(DB の I/O スタックに関係)
 
-- [ ] **Lockify: Understanding Linux Distributed Lock Management Overheads in Shared Storage** — Taeyoung Park et al., FAST, 2026
+- [x] **Lockify: Understanding Linux Distributed Lock Management Overheads in Shared Storage** — Taeyoung Park et al., FAST, 2026
   - id: dblp:conf/fast/ParkJHNH26  | added: 2026-07-06 | via: weekly-sweep
   - url: https://www.usenix.org/conference/fast26/presentation/park  | pdf: none
   - relevance: adjacent — 共有ストレージでの分散ロック管理(DLM)のオーバーヘッド分析(ロック)
 
-- [ ] **DPAS: A Prompt, Accurate and Safe I/O Completion Method for SSDs** — Dongjoo Seo et al., FAST, 2026
+- [x] **DPAS: A Prompt, Accurate and Safe I/O Completion Method for SSDs** — Dongjoo Seo et al., FAST, 2026
   - id: dblp:conf/fast/SeoJYCJLD26  | added: 2026-07-06 | via: weekly-sweep
   - url: https://www.usenix.org/conference/fast26/presentation/seo  | pdf: none
   - relevance: adjacent — SSD の I/O completion 手法(I/O パス)
 
-- [ ] **Characterizing and Emulating FDP SSDs with WARP** — Inho Song et al., FAST, 2026
+- [x] **Characterizing and Emulating FDP SSDs with WARP** — Inho Song et al., FAST, 2026
   - id: dblp:conf/fast/SongQ0BNL26  | added: 2026-07-06 | via: weekly-sweep
   - url: https://www.usenix.org/conference/fast26/presentation/song  | pdf: none
   - relevance: adjacent — FDP SSD の特性評価とエミュレーション(データ配置はLSM/WAL 研究に有用)
 
-- [ ] **Getting the MOST out of your Storage Hierarchy with Mirror-Optimized Storage Tiering** — Kaiwei Tu et al., FAST, 2026
+- [x] **Getting the MOST out of your Storage Hierarchy with Mirror-Optimized Storage Tiering** — Kaiwei Tu et al., FAST, 2026
   - id: dblp:conf/fast/TuWAA26  | added: 2026-07-06 | via: weekly-sweep
   - url: https://www.usenix.org/conference/fast26/presentation/tu  | pdf: none
   - relevance: adjacent — ミラー最適化ストレージ階層化(tiering、メモリ/ディスク階層)
@@ -334,7 +334,7 @@
   - url: https://www.usenix.org/conference/fast26/presentation/yang  | pdf: none
   - relevance: adjacent — クラウドのローカルストレージの過去・現在・未来(展望、階層設計の背景) 【PRUNED 2026-07-06: 剪定で除外(人間確定)】
 
-- [ ] **Cylon: Fast and Accurate Full-System Emulation of CXL-SSDs** — Dongha Yoon et al., FAST, 2026
+- [x] **Cylon: Fast and Accurate Full-System Emulation of CXL-SSDs** — Dongha Yoon et al., FAST, 2026
   - id: dblp:conf/fast/YoonILINL26  | added: 2026-07-06 | via: weekly-sweep
   - url: https://www.usenix.org/conference/fast26/presentation/yoon  | pdf: none
   - relevance: adjacent — CXL-SSD のフルシステムエミュレーション(CXL 研究のツール)
@@ -359,7 +359,7 @@
   - url: https://doi.org/10.1145/3788853.3801586  | pdf: none
   - relevance: borderline — ベクトル-グラフ混合の学習型索引(索引だがベクトル検索寄り) 【PRUNED 2026-07-06: 剪定で除外(人間確定)】
 
-- [ ] **Twenty Years of Bigtable** — Fabio Baltieri et al., SIGMOD Companion, 2026
+- [x] **Twenty Years of Bigtable** — Fabio Baltieri et al., SIGMOD Companion, 2026
   - id: doi:10.1145/3788853.3803095  | added: 2026-07-06 | via: weekly-sweep
   - url: https://doi.org/10.1145/3788853.3803095  | pdf: none
   - relevance: borderline — Bigtable 20年の産業回顧(ストレージシステム史。分量・形式は要確認)
@@ -374,7 +374,7 @@
   - url: https://doi.org/10.1109/ICDEW71238.2026.00006  | pdf: none
   - relevance: borderline — リレーショナル演算子の行列演算化(ハードウェア加速クエリ処理) 【PRUNED 2026-07-06: 剪定で除外(人間確定)】
 
-- [ ] **Thunderbolt: Concurrent Smart Contract Execution with Non-blocking Reconfiguration for Sharded DAGs** — Junchao Chen et al., EDBT, 2026
+- [x] **Thunderbolt: Concurrent Smart Contract Execution with Non-blocking Reconfiguration for Sharded DAGs** — Junchao Chen et al., EDBT, 2026
   - id: doi:10.48786/EDBT.2026.07  | added: 2026-07-06 | via: weekly-sweep
   - url: https://doi.org/10.48786/edbt.2026.07  | pdf: none
   - relevance: borderline — ブロックチェーン文脈だがスマートコントラクトの並行実行+非停止再構成という CC 技術
@@ -394,7 +394,7 @@
   - url: https://doi.org/10.48786/edbt.2026.09  | pdf: none
   - relevance: borderline — HTAP キーワードには合致するが LLM による性能説明が主題 【PRUNED 2026-07-06: 剪定で除外(人間確定)】
 
-- [ ] **Cloudspecs: Cloud Hardware Evolution Through the Looking Glass** — Till Steinert et al., CIDR, 2026
+- [x] **Cloudspecs: Cloud Hardware Evolution Through the Looking Glass** — Till Steinert et al., CIDR, 2026
   - id: dblp:conf/cidr/SteinertKL26  | added: 2026-07-06 | via: weekly-sweep
   - url: https://vldb.org/cidrdb/2026/cloudspecs-cloud-hardware-evolution-through-the-looking-glass.html  | pdf: none
   - relevance: borderline — クラウドハードウェア進化の観測(エンジン設計の背景情報)
@@ -414,7 +414,7 @@
   - url: https://doi.org/10.1145/3767295.3769391  | pdf: none
   - relevance: borderline — ストレージベンチマーク用トレース生成(評価ツール) 【PRUNED 2026-07-06: 剪定で除外(人間確定)】
 
-- [ ] **Unleashing Zoned UFS: Cross-Layer Optimizations for Next-Generation Mobile Storage** — Jungae Kim et al., FAST, 2026
+- [x] **Unleashing Zoned UFS: Cross-Layer Optimizations for Next-Generation Mobile Storage** — Jungae Kim et al., FAST, 2026
   - id: dblp:conf/fast/KimKCPKKOLAJVK26  | added: 2026-07-06 | via: weekly-sweep
   - url: https://www.usenix.org/conference/fast26/presentation/kim-jungae  | pdf: none
   - relevance: borderline — Zoned UFS のクロスレイヤ最適化(zoned storage は LSM 研究と関係するがモバイル向け)
@@ -429,7 +429,7 @@
   - url: https://doi.org/10.1145/3725328  | pdf: none
   - relevance: core — BtrLog の end-to-end 評価の土台となる commit プロトコル(WAL/commit 系の中心文献)
 
-- [ ] **LazyLog: A New Shared Log Abstraction for Low-Latency Applications** — Xuhao Luo et al., SOSP, 2024
+- [x] **LazyLog: A New Shared Log Abstraction for Low-Latency Applications** — Xuhao Luo et al., SOSP, 2024
   - id: doi:10.1145/3694715.3695983  | added: 2026-07-06 | via: citation-of 2026-pvldb-kuschewski-btrlog
   - url: https://doi.org/10.1145/3694715.3695983  | pdf: none
   - relevance: adjacent — BtrLog が対置する遅延束縛型 shared log(ARIES 非互換とされる設計点の一次文献)
