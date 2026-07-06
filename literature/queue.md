@@ -39,7 +39,7 @@
   - url: https://www.vldb.org/pvldb/vol19/p822-zhang.pdf  | pdf: none
   - relevance: core — disaggregated ストレージ上の KV 分離ストレージエンジン
 
-- [ ] **SIDLE: Tree-structure Aware Indexes for CXL-based Heterogeneous Memory** — Haoru Zhao et al., Proc. VLDB Endow., 2026
+- [x] **SIDLE: Tree-structure Aware Indexes for CXL-based Heterogeneous Memory** — Haoru Zhao et al., Proc. VLDB Endow., 2026
   - id: dblp:journals/pvldb/ZhaoDWC26  | added: 2026-07-06 | via: weekly-sweep
   - url: https://www.vldb.org/pvldb/vol19/p1499-zhao.pdf  | pdf: none
   - relevance: core — CXL ヘテロメモリ向け木構造インデックス(disaggregated memory/CXL)
