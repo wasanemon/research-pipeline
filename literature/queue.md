@@ -64,7 +64,7 @@
   - url: https://doi.org/10.1145/3788853.3803084  | pdf: none
   - relevance: core — クラウド DB の階層ストレージ最適化(メモリ/ディスク階層)
 
-- [ ] **Scalable Leader Leases For Multi Consensus Groups in CockroachDB** — Ibrahim Kettaneh et al., SIGMOD Companion, 2026
+- [x] **Scalable Leader Leases For Multi Consensus Groups in CockroachDB** — Ibrahim Kettaneh et al., SIGMOD Companion, 2026
   - id: doi:10.1145/3788853.3803081  | added: 2026-07-06 | via: weekly-sweep
   - url: https://doi.org/10.1145/3788853.3803081  | pdf: none
   - relevance: core — CockroachDB のマルチ合意グループ向けリーダーリース(分散トランザクション/レプリケーション)
