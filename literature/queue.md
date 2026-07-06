@@ -54,7 +54,7 @@
   - url: https://www.vldb.org/pvldb/vol19/p1586-wu.pdf  | pdf: none
   - relevance: core — HTAP DB 向け適応的クエリディスパッチ(HTAP)
 
-- [ ] **Aurora PostgreSQL Limitless Database: Building a Highly Scalable OLTP Database** — Dmitry Arkhangelskiy et al., SIGMOD Companion, 2026
+- [x] **Aurora PostgreSQL Limitless Database: Building a Highly Scalable OLTP Database** — Dmitry Arkhangelskiy et al., SIGMOD Companion, 2026
   - id: doi:10.1145/3788853.3803089  | added: 2026-07-06 | via: weekly-sweep
   - url: https://doi.org/10.1145/3788853.3803089  | pdf: none
   - relevance: core — Aurora PostgreSQL Limitless: スケーラブル分散 OLTP の産業論文
