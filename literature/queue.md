@@ -44,7 +44,7 @@
   - url: https://www.vldb.org/pvldb/vol19/p1499-zhao.pdf  | pdf: none
   - relevance: core — CXL ヘテロメモリ向け木構造インデックス(disaggregated memory/CXL)
 
-- [ ] **Pisco: An Isolation Bug Case Reduction and Deduplication Framework** — Siyang Weng et al., Proc. VLDB Endow., 2026
+- [x] **Pisco: An Isolation Bug Case Reduction and Deduplication Framework** — Siyang Weng et al., Proc. VLDB Endow., 2026
   - id: dblp:journals/pvldb/WengYHZPYZCHP26  | added: 2026-07-06 | via: weekly-sweep
   - url: https://www.vldb.org/pvldb/vol19/p1413-weng.pdf  | pdf: none
   - relevance: core — トランザクション分離バグのケース縮約・重複排除。isolation テスティングは serializability 研究に直結
