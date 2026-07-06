@@ -3,7 +3,7 @@ title: "Milliscale: Fast Commit on Low-Latency Object Storage"
 authors: [Jiatang Zhou, Kaisong Huang, Tianzheng Wang]
 venue: "arXiv"
 year: 2026
-ids: {doi: "", arxiv: "2603.02108", dblp: ""}
+ids: {doi: "", arxiv: "2603.02108", dblp: "journals/corr/abs-2603-02108"}
 urls: {paper: "http://arxiv.org/abs/2603.02108v1", pdf: "https://arxiv.org/pdf/2603.02108v1", code: "https://github.com/sfu-dis/milliscale"}
 status: read
 read_date: 2026-07-06

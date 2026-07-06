@@ -3,7 +3,7 @@ title: "FoundationDB: A Distributed Unbundled Transactional Key Value Store"
 authors: [Jingyu Zhou, Meng Xu, Alexander Shraer, Bala Namasivayam, Alex Miller, Evan Tschannen, Steve Atherton, Andrew J. Beamon, Rusty Sears, John Leach, Dave Rosenthal, Xin Dong, Will Wilson, Ben Collins, David Scherer, Alec Grieser, Young Liu, Alvin Moore, Bhaskar Muppana, Xiaoge Su, Vishesh Yadav]
 venue: "SIGMOD Conference"
 year: 2021
-ids: {doi: "10.1145/3448016.3457559", arxiv: "", dblp: ""}
+ids: {doi: "10.1145/3448016.3457559", arxiv: "", dblp: "conf/sigmod/ZhouXSNMTABSLRD21"}
 urls: {paper: "https://doi.org/10.1145/3448016.3457559", pdf: "https://www.foundationdb.org/files/fdb-paper.pdf", code: "https://github.com/apple/foundationdb"}
 status: read
 read_date: 2026-07-06

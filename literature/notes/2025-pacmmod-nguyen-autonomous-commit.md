@@ -3,7 +3,7 @@ title: "Moving on From Group Commit: Autonomous Commit Enables High Throughput a
 authors: [Lam-Duy Nguyen, Adnan Alhomssi, Tobias Ziegler, Viktor Leis]
 venue: "Proc. ACM Manag. Data 3(3):191"
 year: 2025
-ids: {doi: "10.1145/3725328", arxiv: "", dblp: ""}
+ids: {doi: "10.1145/3725328", arxiv: "", dblp: "journals/pacmmod/NguyenAZL25"}
 urls: {paper: "https://doi.org/10.1145/3725328", pdf: "https://www.cs.cit.tum.de/fileadmin/w00cfj/dis/papers/latency.pdf", code: "https://github.com/leanstore/leanstore/tree/latency"}
 status: read
 read_date: 2026-07-06
