@@ -72,7 +72,7 @@ snapshot-version プロトコルにより zero-downtime バックアップと cr
 - [paper] メディアの前提: ESSD はブロック粒度の atomic visibility(atomic write
   またはポインタ間接、ESSD プロトコル定義)を持つ committed block storage。
   OSS は強整合な HTTP PUT/GET で、2MB の immutable な版付きオブジェクトを
-  単調増加の version ID で保存し、旧版は非同期に回収 (§3.2/p.5)。
+  単調増加の version ID で保存し、旧版は非同期に回収 (§3.1/p.5)。
 - [paper] OSS Buffer を instance-attached でなく network-attached(ESSD)に置くのは
   耐久性のための必須要件: instance storage 上ならノード故障で消え、OSS からの
   full replay なしには回復できない (§3.1)。
@@ -147,7 +147,7 @@ snapshot-version プロトコルにより zero-downtime バックアップと cr
   オブジェクトを append-only 版として書く。PUT 完了後にブロックを clean 化。BPE に
   同居するページには flush を伝搬(W5: 更新または無効化)。段階的耐久性モデル
   (Buffer Pool → OSS Buffer → OSS)。
-- [paper] **flush スケジューリング (§4.2.4)**: ブロック内バッチング(ブロック跨ぎの
+- [paper] **flush スケジューリング (§3.3, §4.2.4)**: ブロック内バッチング(ブロック跨ぎの
   集約はしない)、ホットブロックへの反復書き込みを避ける temporal deferral、飽和前に
   バックグラウンド flush する watermark 制御、OSS QPS とテナント公平性制約下の
   rate limiting。flush はバックグラウンドスレッド(アイドル時・スケジュールバッチ)
@@ -326,3 +326,4 @@ snapshot-version プロトコルにより zero-downtime バックアップと cr
 ## Changelog
 - 2026-07-06: created (status: abstract-only)
 - 2026-07-06: full-text 格上げ(status: abstract-only → read。手動取得した PDF 全文を読解し全節を執筆)
+- 2026-07-06: 検証パスによる修正(セクションアンカー2件を訂正: ESSD/OSS 前提 §3.2→§3.1、flush スケジューリングに §3.3 を追加)

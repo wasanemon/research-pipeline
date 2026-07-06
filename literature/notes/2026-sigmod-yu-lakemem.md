@@ -103,7 +103,7 @@ DRAM-SSD ハイブリッドキャッシュ比 memory-bound クエリ 2.0–5.9×
 - [inference] 「globally coherent」の実体は不変ファイル前提によるところが大きい。
   in-place 更新のあるワークロード(HTAP 的な書き込み)には §5.1 の簡略化は成立せず、
   SharedCache の設計は lakehouse の不変性に強く依存している。
-- [inference] 中間データは「ノード私有」仮定 (§2.2) だが、§1 と §2.2 は shuffle buffer を
+- [inference] 中間データは「ノード私有」仮定 (§2.2) だが、abstract と §1 は shuffle buffer を
   中間データの代表例に挙げている。分散 shuffle では生産ノードと消費ノードが異なり
   うるので、この仮定が multi-node シャッフルでどう保たれるかは本文に明示がない
   (評価の GraySort は smallpond の partition shuffling フェーズを測定から除外している
@@ -277,7 +277,7 @@ DRAM-SSD ハイブリッドキャッシュ比 memory-bound クエリ 2.0–5.9×
     サイズと帯域のトレードオフの掃引は無い。
   - LakeMem は internal prototype で、DMP も Alibaba の先行内部基盤 [21, 48](PolarDB
     系)に依存する。アーティファクト URL は本文に無く、外部再現は困難。
-  - 中間データの「ノード私有」前提は分散 shuffle と緊張関係にある(§2.2 と §1 の
+  - 中間データの「ノード私有」前提は分散 shuffle と緊張関係にある(abstract と §1 の
     shuffle buffer 例示、および GraySort で shuffle フェーズを測定除外している点)。
     ノード間で消費される中間データは SharedCache と PrivateCache のどちらの意味論にも
     きれいに収まらない第3クラスに見える。
@@ -343,3 +343,4 @@ DRAM-SSD ハイブリッドキャッシュ比 memory-bound クエリ 2.0–5.9×
 ## Changelog
 - 2026-07-06: created (status: abstract-only)
 - 2026-07-06: full-text 格上げ(status: abstract-only → read。手動取得した PDF 全文を読解し全節を執筆)
+- 2026-07-06: 検証パスによる修正(shuffle buffer 例示の出典アンカーを §2.2 → abstract/§1 に訂正、2箇所)

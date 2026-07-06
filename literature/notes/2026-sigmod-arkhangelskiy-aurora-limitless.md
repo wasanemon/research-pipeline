@@ -80,7 +80,7 @@ slices + copy-on-write clone)による水平スケールを併用。HammerDB(TPC
   動機 (§3.4 p.3, §5.4 p.6)。shard は顧客設定で 0–2 standby(別 AZ)を持て、故障時は
   standby がストレージボリュームごと引き継ぐ (§3.4)。
 - [paper] ワークロード仮定: production では read-only と single-shard トランザクションが
-  支配的で、これらは 2PC を回避する fast path に乗る (§5.4, p.7)。single-shard クエリが
+  支配的で、これらは 2PC を回避する fast path に乗る (§5.4, p.6–7)。single-shard クエリが
   システムの sweet spot (§7, p.10)。
 - [paper] isolation は RR(PostgreSQL では SI)と RC のみ。serializability は顧客需要が
   限定的なこと、PostgreSQL の SSI 実装 [31] では serialization order が commit order と
@@ -158,7 +158,7 @@ slices + copy-on-write clone)による水平スケールを併用。HammerDB(TPC
   分散トランザクション T′ が更新している場合、shard は T′ の lead shard に T.startTs 付き
   で照会。コミット済みなら commitTs が返り可視性を判定。未コミットなら lead shard が
   自分の C を max{C, T.startTs+1} に進めて応答し、T′ の commitTs > T.startTs を保証して
-  T に不可視化する (§5.5, p.7–8)。
+  T に不可視化する (§5.5, p.7)。
 - [paper] COMMITTING 状態: コミット時刻は決まったがログ flush 未完のトランザクション
   T′ が更新した行を、T′.commitTs ≤ T.startTs の T が読む場合は T′ の確定まで待つ
   (T′ は storage write 失敗で abort し得るため)(§5.5, p.7)。
@@ -169,11 +169,11 @@ slices + copy-on-write clone)による水平スケールを併用。HammerDB(TPC
   (T2 が T1 完了後にコミット開始すれば T2.commitTs > T1.commitTs)を保証すると主張
   (§5.6 + footnote 1, p.7)。commit wait はコミットログの storage 書き込みと並行実行され、
   storage write レイテンシが CEB(典型 <1ms)を上回ることが多いため、クリティカル
-  パスにはほぼ乗らない (§5.6, p.8)。
+  パスにはほぼ乗らない (§5.6, p.7)。
 - [paper] DDL: PostgreSQL 意味論を踏襲し、DDL + DML を単一トランザクションに同梱可能。
   多くの DDL は対象テーブルを持つ全 shard に加え全 router で heavyweight lock
   (例: ALTER TABLE の ACCESS EXCLUSIVE)を取り、コミットは全 router も参加する
-  2PC 変種で行う — クラスタ全体で DDL がアトミックに可視化される (§5.7, p.8)。
+  2PC 変種で行う — クラスタ全体で DDL がアトミックに可視化される (§5.7, p.7–8)。
   グローバルシーケンスは1 shard に永続オブジェクトを作り、router 群に互いに素な
   レンジを事前配布して shard 非接触で採番、枯渇時のみ補充 (§5.7, p.8)。
 - [paper] 分散デッドロック: 顧客設定のタイムアウト超過で疑い、1つの router が各 shard
@@ -362,3 +362,4 @@ slices + copy-on-write clone)による水平スケールを併用。HammerDB(TPC
 ## Changelog
 - 2026-07-06: created (status: abstract-only)
 - 2026-07-06: full-text 格上げ(status: abstract-only → read。手動取得した PDF 全文を読解し全節を執筆)
+- 2026-07-06: 検証パスによる修正(§5.4 / §5.5 / §5.6 / §5.7 の 4 箇所のページアンカーを原文の実ページに合わせて修正。数値・システム名・主張は全件ソース照合済みで訂正なし)

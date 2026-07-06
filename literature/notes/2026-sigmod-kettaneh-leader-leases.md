@@ -198,7 +198,8 @@ per-Range の lease 更新も Raft heartbeat も消え、liveness コストは g
 - [inference] 評価がカバーしていないもの:
   - abstract・§1 は「数百万 consensus group」を掲げるが、実測は 100K Ranges(§5.2)/
     100K warehouses(§5.3)/1800 stores(§5.4)まで。百万 group 規模は §6 のコスト解析
-    (O(N²) vs O(N^{k+1}))による外挿で、直接の実験は無い。
+    (O(N²) fabric vs per-shard heartbeat / O(N^{k+1}) grouping)による外挿で、
+    直接の実験は無い。
   - §1 の「up to 85% less CPU for lease management」に対応する数字は Fig. 6 の系列から
     読み取る形で、本文には 85% の導出(どの Range 数での比較か)が明示されていない。
   - 非対称(単方向)リンク故障の実験が無い。有向エッジ単位の検知は設計上の主張 (§3.4)
@@ -220,8 +221,9 @@ per-Range の lease 更新も Raft heartbeat も消え、liveness コストは g
   - store 単位 heartbeat は node 単位より総 heartbeat 数を増やす(同一 node 宛の heartbeat の
     best-effort バッチングで緩和)(§7.3)。
   - Liveness Fabric のメッセージコストは O(N²)(N = store 数)。placement 柔軟性を保つ
-    grouping 方式の O(N^{k+1}) より安いという議論は k=5・store あたり 40K shards の想定で
-    約 20 万 store 規模までという条件付き (§6)。
+    grouping 方式(O(N^{k+1}))に対しては漸近的に安いが、per-shard heartbeat
+    (N × 40K shards × k=5)との比較では 20TiB ディスク・512MiB/shard の想定で
+    約 20 万 store 規模まで O(N²) の方が安い、という条件付き (§6)。
   - 過渡的な disk stall で不要な leadership 交代が起きないよう、lease duration 3s・heartbeat 1s
     (交代には最低 2 回の heartbeat 失敗が必要)という調整に依存 (§7.2)。
 - Inferred [inference]:
@@ -283,8 +285,9 @@ per-Range の lease 更新も Raft heartbeat も消え、liveness コストは g
   投機的に選挙準備(投票集めの事前交渉)だけ進める変種で直列コストを圧縮できるかは
   開いた問題に見える。検証第一歩: Raft シミュレータで「support 失効と同時に投票が完了して
   いる」理想ケースの failover 下界を測り、現行実装の 2s ランダム待ち (§5.1) との差を分解する。
-- [inference] §6 のコスト解析(O(N²) fabric vs O(N^{k+1}) grouping、k=5・40K shards/store で
-  20 万 store まで有利)は、shared log / multi-log サービス(BtrLog、PALF)の keepalive 設計にも
+- [inference] §6 のコスト解析(O(N²) fabric vs O(N^{k+1}) grouping。加えて per-shard
+  heartbeat との比較では 40K shards/store・k=5 の想定で 20 万 store まで O(N²) が有利)は、
+  shared log / multi-log サービス(BtrLog、PALF)の keepalive 設計にも
   適用できる評価枠組み。BtrLog ノートのアーキテクチャ記述に当てはめ、per-stream の
   liveness 通信を per-node に集約した場合のメッセージ数を試算するところから始められる。
 
@@ -292,3 +295,4 @@ per-Range の lease 更新も Raft heartbeat も消え、liveness コストは g
 - 2026-07-06: created (status: abstract-only)
 - 2026-07-06: 検証パスによる修正(Relations の「consensus/replication を扱うノートはコーパスに無い」という誤った記述を訂正。RIOT・Rosé の既存ノートが該当するため、「lease protocol / failure detector を主題とする最初のノート」に範囲を狭めた)
 - 2026-07-06: full-text 格上げ(status: abstract-only → read。手動取得した PDF 全文を読解し全節を執筆)
+- 2026-07-06: 検証パスによる修正(§6 コスト比較の帰属を訂正: 「約 20 万 store まで」の条件は O(N^{k+1}) grouping との比較ではなく per-shard heartbeat(N×40K×5)との比較に付く。Limitations・Evaluation [inference]・Idea seeds の 3 箇所)

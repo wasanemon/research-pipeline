@@ -137,8 +137,9 @@ IOPS を 6717 → 2752(両方併用、Table 3)に削減し、production の Azur
   全て PageLSN ≥ AppliedLsn)、AppliedTime(スナップショット用)、OldestLsn(これより
   古いログは保存不要)、FileSize (§4.1.1, Table 2)。
 - [paper] Checkpoint の順序規律: RAI は LocalState と RemoteState の2状態を持つ。
-  ①現在の LocalState をスナップショット → ②その値でページ更新を Azure Storage へ
-  flush → ③GFH を更新 → ④成功後に初めて RemoteState を更新。この順序が不変量
+  ①現在の LocalState をスナップショット → ②PS の local checkpoint の一環として
+  LocalState を更新・前進 → ③更新後の LocalState を使ってページ更新を Azure Storage へ
+  flush → ④GFH を更新 → ⑤成功後に初めて RemoteState を更新。この順序が不変量
   LocalState ≥ RemoteState を保証し、復旧の成功とページ非破損の根拠になる
   (§4.1.1, Fig. 8)。
 - [paper] Flush の並行性制御はページラッチを使わず bitmap で行う: checkpoint
@@ -291,3 +292,4 @@ IOPS を 6717 → 2752(両方併用、Table 3)に削減し、production の Azur
 ## Changelog
 - 2026-07-06: created (status: abstract-only)
 - 2026-07-06: full-text 格上げ(status: abstract-only → read。手動取得した PDF 全文を読解し全節を執筆)
+- 2026-07-06: 検証パスによる修正(§4.1.1 checkpoint 順序: flush に使うのは snapshot 値ではなく local checkpoint で更新後の LocalState。省略されていた「LocalState 更新・前進」ステップを補い原文に整合させた)
