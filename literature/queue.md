@@ -179,7 +179,7 @@
   - url: https://www.usenix.org/conference/fast26/presentation/zhan  | pdf: none
   - relevance: core — 高帯域 SSD 時代の buffered I/O 再設計(バッファ管理×I/O 階層)
 
-- [ ] **"Range as a Key" is the Key! Fast and Compact Cloud Block Store Index with RASK** — Haoru Zhao et al., FAST, 2026
+- [x] **"Range as a Key" is the Key! Fast and Compact Cloud Block Store Index with RASK** — Haoru Zhao et al., FAST, 2026
   - id: dblp:conf/fast/Zhao0XW026  | added: 2026-07-06 | via: weekly-sweep
   - url: https://www.usenix.org/conference/fast26/presentation/zhao  | pdf: none
   - relevance: core — クラウドブロックストア向け高速コンパクト索引 RASK(索引×ストレージ)
