@@ -268,3 +268,13 @@
 - 評価ツール・シミュレータの扱いを点検: スコープキーワード(CXL/disaggregated、recovery、buffer management)に直結する研究評価基盤は keep(idx 23, 30, 36, 45)で一貫しており変更なし。
 - 最終集計: keep 33 / drop 15 / unsure 0(unsure 3 件をすべて基準ベースで解消)。
 
+## 反映結果(2026-07-06 確定)
+
+コミット a8088e9 のマークとメッセージ(focus: disaggregated memory / LSM / MVCC / I/O completion)に基づき、
+[x] を「落とす確定」と解釈して反映した:
+
+- **落とす 21本** = 推奨 drop 15本(TokaDB 含む)+ keep から降格 6本
+  (ResBench / 2DIO / Proof-of-Execution / OptiLog / Avicenna / TDSQL-Boundless)
+- **残す 27本** → 第3ノート化バッチへ
+
+queue.md の該当エントリには PRUNED 印を追記(エントリ自体は履歴として保持)。

@@ -192,7 +192,7 @@
 - [ ] **I/O Optimizations in Graph-Based Disk-Resident Approximate Nearest Neighbor Search: A Design Space Exploration** — Liang Li et al., Proc. VLDB Endow., 2026
   - id: dblp:journals/pvldb/LiGYWW26  | added: 2026-07-06 | via: weekly-sweep
   - url: https://www.vldb.org/pvldb/vol19/p1484-li.pdf  | pdf: none
-  - relevance: adjacent — ディスク常駐 ANN 索引の I/O 設計空間(索引×ディスク階層だが対象はベクトル検索)
+  - relevance: adjacent — ディスク常駐 ANN 索引の I/O 設計空間(索引×ディスク階層だが対象はベクトル検索) 【PRUNED 2026-07-06: 剪定で除外(人間確定)】
 
 - [ ] **Efficient Temporal Subgraph Management: A New Interval Index** — Dian Ouyang et al., Proc. VLDB Endow., 2026
   - id: dblp:journals/pvldb/OuyangWWZLL26  | added: 2026-07-06 | via: weekly-sweep
@@ -202,7 +202,7 @@
 - [ ] **SACK: Shielding Dynamic Attribute-based Access Control in Persistent Key-Value Stores** — Yanjing Ren et al., Proc. VLDB Endow., 2026
   - id: dblp:journals/pvldb/RenLL26  | added: 2026-07-06 | via: weekly-sweep
   - url: https://www.vldb.org/pvldb/vol19/p1128-ren.pdf  | pdf: none
-  - relevance: adjacent — 永続 KV ストアでの動的アクセス制御(ストレージエンジン×セキュリティ)
+  - relevance: adjacent — 永続 KV ストアでの動的アクセス制御(ストレージエンジン×セキュリティ) 【PRUNED 2026-07-06: 剪定で除外(人間確定)】
 
 - [ ] **LiBox: A Learned Index as an Array to Minimize Last-Mile Search** — Jian Zhou et al., Proc. VLDB Endow., 2026
   - id: dblp:journals/pvldb/ZhouWZZJ26  | added: 2026-07-06 | via: weekly-sweep
@@ -217,12 +217,12 @@
 - [ ] **TokaDB: A Unified Storage Engine for Training-Serving Data Management in Large Recommendation Models** — Peng Fang et al., SIGMOD Companion, 2026
   - id: doi:10.1145/3788853.3803078  | added: 2026-07-06 | via: weekly-sweep
   - url: https://doi.org/10.1145/3788853.3803078  | pdf: none
-  - relevance: adjacent — 推薦モデル学習/サービング向け統合ストレージエンジン(応用はML系)
+  - relevance: adjacent — 推薦モデル学習/サービング向け統合ストレージエンジン(応用はML系) 【PRUNED 2026-07-06: 剪定で除外(人間確定)】
 
 - [ ] **TDSQL-Boundless: A Distributed Database System for Large-scale Heterogeneous Multi-Table Workloads** — Yuxing Chen et al., SIGMOD Companion, 2026
   - id: doi:10.1145/3788853.3803090  | added: 2026-07-06 | via: weekly-sweep
   - url: https://doi.org/10.1145/3788853.3803090  | pdf: none
-  - relevance: adjacent — TDSQL-Boundless: 大規模ヘテロワークロード向け分散 DB(産業論文)
+  - relevance: adjacent — TDSQL-Boundless: 大規模ヘテロワークロード向け分散 DB(産業論文) 【PRUNED 2026-07-06: 剪定で除外(人間確定)】
 
 - [ ] **RecDB: An LSM-Tree based Storage System for Training Large Recommendation Model in Low-Resource Scenarios** — Ming Gao et al., EDBT, 2026
   - id: doi:10.48786/EDBT.2026.37  | added: 2026-07-06 | via: weekly-sweep
@@ -252,7 +252,7 @@
 - [ ] **Proof-of-Execution: Low-Latency Consensus via Speculative Execution** — Jelle Hellings et al., ACM Trans. Database Syst., 2026
   - id: doi:10.1145/3774322  | added: 2026-07-06 | via: weekly-sweep
   - url: https://doi.org/10.1145/3774322  | pdf: none
-  - relevance: adjacent — 投機実行による低遅延コンセンサス(一般のコンセンサス技術)
+  - relevance: adjacent — 投機実行による低遅延コンセンサス(一般のコンセンサス技術) 【PRUNED 2026-07-06: 剪定で除外(人間確定)】
 
 - [ ] **Mitigating False Positives in Filters: To Adapt or to Cache?** — Tianchi Mo et al., ACM Trans. Database Syst., 2026
   - id: doi:10.1145/3786324  | added: 2026-07-06 | via: weekly-sweep
@@ -272,12 +272,12 @@
 - [ ] **OptiLog: Assigning Roles in Byzantine Consensus** — Hanish Gogada et al., EuroSys, 2026
   - id: doi:10.1145/3767295.3769342  | added: 2026-07-06 | via: weekly-sweep
   - url: https://doi.org/10.1145/3767295.3769342  | pdf: none
-  - relevance: adjacent — BFT コンセンサスの役割割当(一般のコンセンサス技術)
+  - relevance: adjacent — BFT コンセンサスの役割割当(一般のコンセンサス技術) 【PRUNED 2026-07-06: 剪定で除外(人間確定)】
 
 - [ ] **Avicenna: Masking Slowdowns in Replicated State Machines with Counterfactual Evaluation** — Christopher Hodsdon et al., EuroSys, 2026
   - id: doi:10.1145/3767295.3803615  | added: 2026-07-06 | via: weekly-sweep
   - url: https://doi.org/10.1145/3767295.3803615  | pdf: none
-  - relevance: adjacent — 複製状態機械の遅延マスキング(レプリケーション)
+  - relevance: adjacent — 複製状態機械の遅延マスキング(レプリケーション) 【PRUNED 2026-07-06: 剪定で除外(人間確定)】
 
 - [ ] **TierScape: Harnessing Multiple Compressed Tiers to Tame Server Memory TCO** — Sandeep Kumar et al., EuroSys, 2026
   - id: doi:10.1145/3767295.3769321  | added: 2026-07-06 | via: weekly-sweep
@@ -287,7 +287,7 @@
 - [ ] **LightDSA: Enabling Efficient DSA Through Hardware-Aware Transparent Optimization** — Yuansen Wang et al., EuroSys, 2026
   - id: doi:10.1145/3767295.3769356  | added: 2026-07-06 | via: weekly-sweep
   - url: https://doi.org/10.1145/3767295.3769356  | pdf: none
-  - relevance: adjacent — Intel DSA オフロードの透過的最適化(データ移動 HW、エンジンで利用され得る)
+  - relevance: adjacent — Intel DSA オフロードの透過的最適化(データ移動 HW、エンジンで利用され得る) 【PRUNED 2026-07-06: 剪定で除外(人間確定)】
 
 - [ ] **FicusDB: Scalable Multi-Versioned Authenticated Archival Storage** — Hongbo Zhang et al., EuroSys, 2026
   - id: doi:10.1145/3767295.3803601  | added: 2026-07-06 | via: weekly-sweep
@@ -332,7 +332,7 @@
 - [ ] **Here, There and Everywhere: The Past, the Present and the Future of Local Storage in Cloud** — Leping Yang et al., FAST, 2026
   - id: dblp:conf/fast/YangZZZZWSLLNZW26  | added: 2026-07-06 | via: weekly-sweep
   - url: https://www.usenix.org/conference/fast26/presentation/yang  | pdf: none
-  - relevance: adjacent — クラウドのローカルストレージの過去・現在・未来(展望、階層設計の背景)
+  - relevance: adjacent — クラウドのローカルストレージの過去・現在・未来(展望、階層設計の背景) 【PRUNED 2026-07-06: 剪定で除外(人間確定)】
 
 - [ ] **Cylon: Fast and Accurate Full-System Emulation of CXL-SSDs** — Dongha Yoon et al., FAST, 2026
   - id: dblp:conf/fast/YoonILINL26  | added: 2026-07-06 | via: weekly-sweep
@@ -342,22 +342,22 @@
 - [ ] **When Classic Cache Policies Fail: Learning-Augmented Replacement for Semantic Retrieval Buffers** — Yushi Sun et al., arXiv, 2026
   - id: arxiv:2607.00394  | added: 2026-07-06 | via: weekly-sweep
   - url: http://arxiv.org/abs/2607.00394v1  | pdf: https://arxiv.org/pdf/2607.00394v1
-  - relevance: borderline — キャッシュ置換ポリシー(学習拡張)。アルゴリズムはバッファ管理だが対象はLLMエージェントの意味的バッファ
+  - relevance: borderline — キャッシュ置換ポリシー(学習拡張)。アルゴリズムはバッファ管理だが対象はLLMエージェントの意味的バッファ 【PRUNED 2026-07-06: 剪定で除外(人間確定)】
 
 - [ ] **CLAPS: A Load-Aware Proxy Resource Pooling System for Reducing Resource Redundancy in Large-Scale Cloud Storage** — Xiuqi Huang et al., SIGMOD Companion, 2026
   - id: doi:10.1145/3788853.3803082  | added: 2026-07-06 | via: weekly-sweep
   - url: https://doi.org/10.1145/3788853.3803082  | pdf: none
-  - relevance: borderline — 大規模クラウドストレージのプロキシ資源プール(インフラ寄り)
+  - relevance: borderline — 大規模クラウドストレージのプロキシ資源プール(インフラ寄り) 【PRUNED 2026-07-06: 剪定で除外(人間確定)】
 
 - [ ] **CoddSpeed: Hardware Accelerated Query Processing in Microsoft Fabric** — Matteo Interlandi et al., SIGMOD Companion, 2026
   - id: doi:10.1145/3788853.3803077  | added: 2026-07-06 | via: weekly-sweep
   - url: https://doi.org/10.1145/3788853.3803077  | pdf: none
-  - relevance: borderline — ハードウェア加速クエリ処理(クエリ実行系。TP/ストレージの中心ではない)
+  - relevance: borderline — ハードウェア加速クエリ処理(クエリ実行系。TP/ストレージの中心ではない) 【PRUNED 2026-07-06: 剪定で除外(人間確定)】
 
 - [ ] **LEGEND: A Learned Explainable Graph-Enhanced Navigable Index for Hybrid Vector-Graph Search** — Joydeep Chandra et al., SIGMOD Companion, 2026
   - id: doi:10.1145/3788853.3801586  | added: 2026-07-06 | via: weekly-sweep
   - url: https://doi.org/10.1145/3788853.3801586  | pdf: none
-  - relevance: borderline — ベクトル-グラフ混合の学習型索引(索引だがベクトル検索寄り)
+  - relevance: borderline — ベクトル-グラフ混合の学習型索引(索引だがベクトル検索寄り) 【PRUNED 2026-07-06: 剪定で除外(人間確定)】
 
 - [ ] **Twenty Years of Bigtable** — Fabio Baltieri et al., SIGMOD Companion, 2026
   - id: doi:10.1145/3788853.3803095  | added: 2026-07-06 | via: weekly-sweep
@@ -367,12 +367,12 @@
 - [ ] **ResBench: A Comprehensive Framework for Evaluating Database Resilience** — Puyun Hu et al., SIGMOD Companion, 2026
   - id: doi:10.1145/3788853.3801615  | added: 2026-07-06 | via: weekly-sweep
   - url: https://doi.org/10.1145/3788853.3801615  | pdf: none
-  - relevance: borderline — DB レジリエンス評価フレームワーク(recovery 関連の評価系)
+  - relevance: borderline — DB レジリエンス評価フレームワーク(recovery 関連の評価系) 【PRUNED 2026-07-06: 剪定で除外(人間確定)】
 
 - [ ] **Rethinking Relational Operators as Hardware-Accelerated Matrix Operations** — Jannis Karampetsos et al., ICDEW, 2026
   - id: doi:10.1109/ICDEW71238.2026.00006  | added: 2026-07-06 | via: weekly-sweep
   - url: https://doi.org/10.1109/ICDEW71238.2026.00006  | pdf: none
-  - relevance: borderline — リレーショナル演算子の行列演算化(ハードウェア加速クエリ処理)
+  - relevance: borderline — リレーショナル演算子の行列演算化(ハードウェア加速クエリ処理) 【PRUNED 2026-07-06: 剪定で除外(人間確定)】
 
 - [ ] **Thunderbolt: Concurrent Smart Contract Execution with Non-blocking Reconfiguration for Sharded DAGs** — Junchao Chen et al., EDBT, 2026
   - id: doi:10.48786/EDBT.2026.07  | added: 2026-07-06 | via: weekly-sweep
@@ -382,17 +382,17 @@
 - [ ] **CAMEL Hash Table: Striking a Balance Between CPU and Memory Efficiency in Main-Memory Hash Join** — Sudip Chatterjee et al., EDBT, 2026
   - id: doi:10.48786/EDBT.2026.27  | added: 2026-07-06 | via: weekly-sweep
   - url: https://doi.org/10.48786/edbt.2026.27  | pdf: none
-  - relevance: borderline — 主記憶ハッシュ結合の CPU/メモリ効率(クエリ実行系データ構造)
+  - relevance: borderline — 主記憶ハッシュ結合の CPU/メモリ効率(クエリ実行系データ構造) 【PRUNED 2026-07-06: 剪定で除外(人間確定)】
 
 - [ ] **Fast Landmark Reconfiguration for Highway Cover Indexes** — David Coudert et al., EDBT, 2026
   - id: doi:10.48786/EDBT.2026.18  | added: 2026-07-06 | via: weekly-sweep
   - url: https://doi.org/10.48786/edbt.2026.18  | pdf: none
-  - relevance: borderline — 最短路系インデックスの再構成(索引だがグラフ問合せ)
+  - relevance: borderline — 最短路系インデックスの再構成(索引だがグラフ問合せ) 【PRUNED 2026-07-06: 剪定で除外(人間確定)】
 
 - [ ] **Query Performance Explanation through Large Language Model for HTAP Systems** — Haibo Xiu et al., EDBT, 2026
   - id: doi:10.48786/EDBT.2026.09  | added: 2026-07-06 | via: weekly-sweep
   - url: https://doi.org/10.48786/edbt.2026.09  | pdf: none
-  - relevance: borderline — HTAP キーワードには合致するが LLM による性能説明が主題
+  - relevance: borderline — HTAP キーワードには合致するが LLM による性能説明が主題 【PRUNED 2026-07-06: 剪定で除外(人間確定)】
 
 - [ ] **Cloudspecs: Cloud Hardware Evolution Through the Looking Glass** — Till Steinert et al., CIDR, 2026
   - id: dblp:conf/cidr/SteinertKL26  | added: 2026-07-06 | via: weekly-sweep
@@ -402,17 +402,17 @@
 - [ ] **Efficient graph embedding at scale: optimizing CPU-GPU-SSD integration** — Zhonggen Li et al., VLDB J., 2026
   - id: doi:10.1007/S00778-026-00974-8  | added: 2026-07-06 | via: weekly-sweep
   - url: https://doi.org/10.1007/s00778-026-00974-8  | pdf: none
-  - relevance: borderline — CPU-GPU-SSD 統合の最適化(メモリ/ディスク階層だが対象はグラフ埋め込み)
+  - relevance: borderline — CPU-GPU-SSD 統合の最適化(メモリ/ディスク階層だが対象はグラフ埋め込み) 【PRUNED 2026-07-06: 剪定で除外(人間確定)】
 
 - [ ] **ASIC-based Compression Accelerators for Storage Systems: Design, Placement, and Profiling Insights** — Tao Lu et al., EuroSys, 2026
   - id: doi:10.1145/3767295.3769384  | added: 2026-07-06 | via: weekly-sweep
   - url: https://doi.org/10.1145/3767295.3769384  | pdf: none
-  - relevance: borderline — ストレージ向け ASIC 圧縮アクセラレータ(HW 寄り)
+  - relevance: borderline — ストレージ向け ASIC 圧縮アクセラレータ(HW 寄り) 【PRUNED 2026-07-06: 剪定で除外(人間確定)】
 
 - [ ] **2DIO: Configurable and Cache-Accurate Trace Generation for Storage Benchmarking** — Yirong Wang et al., EuroSys, 2026
   - id: doi:10.1145/3767295.3769391  | added: 2026-07-06 | via: weekly-sweep
   - url: https://doi.org/10.1145/3767295.3769391  | pdf: none
-  - relevance: borderline — ストレージベンチマーク用トレース生成(評価ツール)
+  - relevance: borderline — ストレージベンチマーク用トレース生成(評価ツール) 【PRUNED 2026-07-06: 剪定で除外(人間確定)】
 
 - [ ] **Unleashing Zoned UFS: Cross-Layer Optimizations for Next-Generation Mobile Storage** — Jungae Kim et al., FAST, 2026
   - id: dblp:conf/fast/KimKCPKKOLAJVK26  | added: 2026-07-06 | via: weekly-sweep
