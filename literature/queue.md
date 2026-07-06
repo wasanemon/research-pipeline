@@ -144,7 +144,7 @@
   - url: https://doi.org/10.1145/3767295.3769343  | pdf: none
   - relevance: core — 永続メモリ・トランザクションの高速読み出し(PM×CC)
 
-- [ ] **Scalable RDMA-accelerated Distributed Locks with Shared Stream Abstraction** — Miao Cai et al., EuroSys, 2026
+- [x] **Scalable RDMA-accelerated Distributed Locks with Shared Stream Abstraction** — Miao Cai et al., EuroSys, 2026
   - id: doi:10.1145/3767295.3803598  | added: 2026-07-06 | via: weekly-sweep
   - url: https://doi.org/10.1145/3767295.3803598  | pdf: none
   - relevance: core — RDMA 加速の分散ロック(ロック/分散 CC)
