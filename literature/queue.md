@@ -29,7 +29,7 @@
   - url: https://www.vldb.org/pvldb/vol19/p1469-lee.pdf  | pdf: none
   - relevance: core — SSD 書き込みパスの検討。ストレージエンジンの I/O 階層設計に直結
 
-- [ ] **ArceKV: Towards Workload-driven LSM-compactions for Key-Value Store Under Dynamic Workloads** — Junfeng Liu et al., Proc. VLDB Endow., 2026
+- [x] **ArceKV: Towards Workload-driven LSM-compactions for Key-Value Store Under Dynamic Workloads** — Junfeng Liu et al., Proc. VLDB Endow., 2026
   - id: dblp:journals/pvldb/LiuXL26  | added: 2026-07-06 | via: weekly-sweep
   - url: https://www.vldb.org/pvldb/vol19/p958-liu.pdf  | pdf: none
   - relevance: core — 動的ワークロード下の LSM コンパクション方針(LSM-tree)
