@@ -104,7 +104,7 @@
   - url: https://doi.org/10.48786/edbt.2026.77  | pdf: none
   - relevance: core — disaggregated データシステムのサーベイ/課題整理(文献フェーズに有用)
 
-- [ ] **Exploring Dynamic Memory Allocation of CXL Memory Pools in Enterprise In-Memory Database Management Systems** — Donghun Lee et al., EDBT, 2026
+- [x] **Exploring Dynamic Memory Allocation of CXL Memory Pools in Enterprise In-Memory Database Management Systems** — Donghun Lee et al., EDBT, 2026
   - id: doi:10.48786/EDBT.2026.58  | added: 2026-07-06 | via: weekly-sweep
   - url: https://doi.org/10.48786/edbt.2026.58  | pdf: none
   - relevance: core — エンタープライズ in-memory DBMS での CXL メモリプール動的割当(CXL/disaggregated)
