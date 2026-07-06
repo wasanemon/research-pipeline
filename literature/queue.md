@@ -59,7 +59,7 @@
   - url: https://doi.org/10.1145/3788853.3803089  | pdf: none
   - relevance: core — Aurora PostgreSQL Limitless: スケーラブル分散 OLTP の産業論文
 
-- [ ] **CloudJump III: Optimizing Cloud Databases for Tiered Storage** — Zongzhi Chen et al., SIGMOD Companion, 2026
+- [x] **CloudJump III: Optimizing Cloud Databases for Tiered Storage** — Zongzhi Chen et al., SIGMOD Companion, 2026
   - id: doi:10.1145/3788853.3803084  | added: 2026-07-06 | via: weekly-sweep
   - url: https://doi.org/10.1145/3788853.3803084  | pdf: none
   - relevance: core — クラウド DB の階層ストレージ最適化(メモリ/ディスク階層)
