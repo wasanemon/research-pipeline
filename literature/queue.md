@@ -94,7 +94,7 @@
   - url: https://doi.org/10.1109/ICDEW71238.2026.00021  | pdf: none
   - relevance: core — HTAP を超える統合(HTAIP)を掲げるフレームワーク(HTAP)
 
-- [ ] **Evaluating Learned Indexes in LSM-tree Systems: Benchmarks, Insights and Design Choices** — Junfeng Liu et al., EDBT, 2026
+- [x] **Evaluating Learned Indexes in LSM-tree Systems: Benchmarks, Insights and Design Choices** — Junfeng Liu et al., EDBT, 2026
   - id: doi:10.48786/EDBT.2026.16  | added: 2026-07-06 | via: weekly-sweep
   - url: https://doi.org/10.48786/edbt.2026.16  | pdf: none
   - relevance: core — LSM-tree システムにおける learned index の評価(LSM×索引)
