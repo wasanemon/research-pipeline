@@ -154,7 +154,7 @@
   - url: https://doi.org/10.1145/3767295.3803608  | pdf: none
   - relevance: core — レプリケートされたストレージ向け論理 disaggregated キャッシュ
 
-- [ ] **Accelerating Transactional Execution via Processing-In-Memory** — André Lopes et al., EuroSys, 2026
+- [x] **Accelerating Transactional Execution via Processing-In-Memory** — André Lopes et al., EuroSys, 2026
   - id: doi:10.1145/3767295.3803621  | added: 2026-07-06 | via: weekly-sweep
   - url: https://doi.org/10.1145/3767295.3803621  | pdf: none
   - relevance: core — processing-in-memory によるトランザクション実行の加速(PIM×TP)
