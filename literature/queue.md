@@ -89,7 +89,7 @@
   - url: https://doi.org/10.1109/ICDEW71238.2026.00007  | pdf: none
   - relevance: core — フラッシュ SSD 向けホットページ対応チェックポインティング(checkpoint)
 
-- [ ] **TiRex: An HTAIP Framework Beyond HTAP for Unified Transactional, Analytical, and AI Workloads** — Jane Yu et al., ICDEW, 2026
+- [x] **TiRex: An HTAIP Framework Beyond HTAP for Unified Transactional, Analytical, and AI Workloads** — Jane Yu et al., ICDEW, 2026
   - id: doi:10.1109/ICDEW71238.2026.00021  | added: 2026-07-06 | via: weekly-sweep
   - url: https://doi.org/10.1109/ICDEW71238.2026.00021  | pdf: none
   - relevance: core — HTAP を超える統合(HTAIP)を掲げるフレームワーク(HTAP)
