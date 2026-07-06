@@ -79,7 +79,7 @@
   - url: https://doi.org/10.1145/3788853.3803094  | pdf: none
   - relevance: core — RIOT: レプリケートされた独立順序トランザクション(タイトルから CC/レプリケーション新方式)
 
-- [ ] **LakeMem: An Elastic Disaggregated-Memory Caching Layer for Analytical Processing Systems** — Xinyi Yu et al., SIGMOD Companion, 2026
+- [x] **LakeMem: An Elastic Disaggregated-Memory Caching Layer for Analytical Processing Systems** — Xinyi Yu et al., SIGMOD Companion, 2026
   - id: doi:10.1145/3788853.3803100  | added: 2026-07-06 | via: weekly-sweep
   - url: https://doi.org/10.1145/3788853.3803100  | pdf: none
   - relevance: core — 分析処理向け disaggregated メモリ・キャッシュ層(disaggregated memory)
