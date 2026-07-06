@@ -74,7 +74,7 @@
   - url: https://doi.org/10.1145/3788853.3803083  | pdf: none
   - relevance: core — Azure SQL Hyperscale のストレージ層(ストレージ/回復性、産業論文)
 
-- [ ] **RIOT: Replicated Independently-Ordered Transactions** — Jim Webber et al., SIGMOD Companion, 2026
+- [x] **RIOT: Replicated Independently-Ordered Transactions** — Jim Webber et al., SIGMOD Companion, 2026
   - id: doi:10.1145/3788853.3803094  | added: 2026-07-06 | via: weekly-sweep
   - url: https://doi.org/10.1145/3788853.3803094  | pdf: none
   - relevance: core — RIOT: レプリケートされた独立順序トランザクション(タイトルから CC/レプリケーション新方式)
