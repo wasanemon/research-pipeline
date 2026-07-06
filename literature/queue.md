@@ -174,7 +174,7 @@
   - url: https://www.usenix.org/conference/fast26/presentation/wei  | pdf: none
   - relevance: core — disaggregated メモリ上の木インデックス(disaggregated memory×索引)
 
-- [ ] **Rearchitecting Buffered I/O in the Era of High-Bandwidth SSDs** — Yekang Zhan et al., FAST, 2026
+- [x] **Rearchitecting Buffered I/O in the Era of High-Bandwidth SSDs** — Yekang Zhan et al., FAST, 2026
   - id: dblp:conf/fast/ZhanWPHW000026  | added: 2026-07-06 | via: weekly-sweep
   - url: https://www.usenix.org/conference/fast26/presentation/zhan  | pdf: none
   - relevance: core — 高帯域 SSD 時代の buffered I/O 再設計(バッファ管理×I/O 階層)
