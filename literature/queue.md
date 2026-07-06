@@ -124,7 +124,7 @@
   - url: https://vldb.org/cidrdb/2026/flexible-io-for-database-management-systems-with-xnvme.html  | pdf: none
   - relevance: core — xNVMe による DBMS の柔軟な I/O パス(ストレージ I/O)
 
-- [ ] **Rosé: Flexible Replication With Strong Semantics For Partitioned Databases** — Ioannis Zarkadas et al., CIDR, 2026
+- [x] **Rosé: Flexible Replication With Strong Semantics For Partitioned Databases** — Ioannis Zarkadas et al., CIDR, 2026
   - id: dblp:conf/cidr/ZarkadasKGYBCE26  | added: 2026-07-06 | via: weekly-sweep
   - url: https://vldb.org/cidrdb/2026/rose-flexible-replication-with-strong-semantics-for-partitioned-databases.html  | pdf: none
   - relevance: core — パーティション DB 向けの強いセマンティクスのレプリケーション
