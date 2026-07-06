@@ -99,7 +99,7 @@
   - url: https://doi.org/10.48786/edbt.2026.16  | pdf: none
   - relevance: core — LSM-tree システムにおける learned index の評価(LSM×索引)
 
-- [ ] **Disaggregated Data System Architecture - State-of-the-Art and Open Challenges** — Alexander Krause et al., EDBT, 2026
+- [x] **Disaggregated Data System Architecture - State-of-the-Art and Open Challenges** — Alexander Krause et al., EDBT, 2026
   - id: doi:10.48786/EDBT.2026.77  | added: 2026-07-06 | via: weekly-sweep
   - url: https://doi.org/10.48786/edbt.2026.77  | pdf: none
   - relevance: core — disaggregated データシステムのサーベイ/課題整理(文献フェーズに有用)
