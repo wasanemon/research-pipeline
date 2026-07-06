@@ -119,7 +119,7 @@
   - url: https://vldb.org/cidrdb/2026/a-multi-tenant-relational-oltp-database-at-salesforce.html  | pdf: none
   - relevance: core — Salesforce のマルチテナント OLTP(産業論文)
 
-- [ ] **Flexible I/O for Database Management Systems with xNVMe** — Emil Houlborg et al., CIDR, 2026
+- [x] **Flexible I/O for Database Management Systems with xNVMe** — Emil Houlborg et al., CIDR, 2026
   - id: dblp:conf/cidr/HoulborgTLWR00T26  | added: 2026-07-06 | via: weekly-sweep
   - url: https://vldb.org/cidrdb/2026/flexible-io-for-database-management-systems-with-xnvme.html  | pdf: none
   - relevance: core — xNVMe による DBMS の柔軟な I/O パス(ストレージ I/O)
