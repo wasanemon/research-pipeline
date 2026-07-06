@@ -169,7 +169,7 @@
   - url: https://www.usenix.org/conference/fast26/presentation/ren  | pdf: none
   - relevance: core — 分散 LSM ストレージのタスクスケジューリング(LSM-tree)
 
-- [ ] **DMTree: Towards Efficient Tree Indexing on Disaggregated Memory via Compute-side Collaborative Design** — Guoli Wei et al., FAST, 2026
+- [x] **DMTree: Towards Efficient Tree Indexing on Disaggregated Memory via Compute-side Collaborative Design** — Guoli Wei et al., FAST, 2026
   - id: dblp:conf/fast/Wei0SLY0C26  | added: 2026-07-06 | via: weekly-sweep
   - url: https://www.usenix.org/conference/fast26/presentation/wei  | pdf: none
   - relevance: core — disaggregated メモリ上の木インデックス(disaggregated memory×索引)
