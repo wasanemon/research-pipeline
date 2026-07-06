@@ -114,7 +114,7 @@
   - url: https://doi.org/10.48786/edbt.2026.12  | pdf: none
   - relevance: core — LSM KV ストア向け適応キャッシュ管理(LSM×バッファ管理)
 
-- [ ] **A Multi-tenant Relational OLTP Database at Salesforce** — Vaibhav Arora et al., CIDR, 2026
+- [x] **A Multi-tenant Relational OLTP Database at Salesforce** — Vaibhav Arora et al., CIDR, 2026
   - id: dblp:conf/cidr/AroraCCFHMMW26  | added: 2026-07-06 | via: weekly-sweep
   - url: https://vldb.org/cidrdb/2026/a-multi-tenant-relational-oltp-database-at-salesforce.html  | pdf: none
   - relevance: core — Salesforce のマルチテナント OLTP(産業論文)
