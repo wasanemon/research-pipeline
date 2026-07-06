@@ -69,7 +69,7 @@
   - url: https://doi.org/10.1145/3788853.3803081  | pdf: none
   - relevance: core — CockroachDB のマルチ合意グループ向けリーダーリース(分散トランザクション/レプリケーション)
 
-- [ ] **Scalable and Resilient Storage Tier for Azure SQL Hyperscale** — Alejandro Hernandez Saenz et al., SIGMOD Companion, 2026
+- [x] **Scalable and Resilient Storage Tier for Azure SQL Hyperscale** — Alejandro Hernandez Saenz et al., SIGMOD Companion, 2026
   - id: doi:10.1145/3788853.3803083  | added: 2026-07-06 | via: weekly-sweep
   - url: https://doi.org/10.1145/3788853.3803083  | pdf: none
   - relevance: core — Azure SQL Hyperscale のストレージ層(ストレージ/回復性、産業論文)
