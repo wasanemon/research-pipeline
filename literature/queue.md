@@ -134,7 +134,7 @@
   - url: https://doi.org/10.1145/3774753  | pdf: none
   - relevance: core — near-data processing DBMS でトランザクション保証付き更新オフロード(NDP×TP)
 
-- [ ] **An Evaluation of B-tree Compression Techniques** — Sikang Sun et al., VLDB J., 2026
+- [x] **An Evaluation of B-tree Compression Techniques** — Sikang Sun et al., VLDB J., 2026
   - id: doi:10.1007/S00778-025-00950-8  | added: 2026-07-06 | via: weekly-sweep
   - url: https://doi.org/10.1007/s00778-025-00950-8  | pdf: none
   - relevance: core — B-tree 圧縮技術の評価(ストレージエンジン/索引の実証研究)
