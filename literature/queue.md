@@ -34,7 +34,7 @@
   - url: https://www.vldb.org/pvldb/vol19/p958-liu.pdf  | pdf: none
   - relevance: core — 動的ワークロード下の LSM コンパクション方針(LSM-tree)
 
-- [ ] **Terark-DS: A High-Performance and Storage-Efficient Key-Value Separation Storage Engine on Disaggregated Storage** — Jianshun Zhang et al., Proc. VLDB Endow., 2026
+- [x] **Terark-DS: A High-Performance and Storage-Efficient Key-Value Separation Storage Engine on Disaggregated Storage** — Jianshun Zhang et al., Proc. VLDB Endow., 2026
   - id: dblp:journals/pvldb/ZhangDWOWWCFF26  | added: 2026-07-06 | via: weekly-sweep
   - url: https://www.vldb.org/pvldb/vol19/p822-zhang.pdf  | pdf: none
   - relevance: core — disaggregated ストレージ上の KV 分離ストレージエンジン
