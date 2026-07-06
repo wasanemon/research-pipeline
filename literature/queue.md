@@ -84,7 +84,7 @@
   - url: https://doi.org/10.1145/3788853.3803100  | pdf: none
   - relevance: core — 分析処理向け disaggregated メモリ・キャッシュ層(disaggregated memory)
 
-- [ ] **Hot-Page-Aware Checkpointing for Flash SSDs** — Geunhyun Park et al., ICDEW, 2026
+- [x] **Hot-Page-Aware Checkpointing for Flash SSDs** — Geunhyun Park et al., ICDEW, 2026
   - id: doi:10.1109/ICDEW71238.2026.00007  | added: 2026-07-06 | via: weekly-sweep
   - url: https://doi.org/10.1109/ICDEW71238.2026.00007  | pdf: none
   - relevance: core — フラッシュ SSD 向けホットページ対応チェックポインティング(checkpoint)
