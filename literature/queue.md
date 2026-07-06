@@ -159,7 +159,7 @@
   - url: https://doi.org/10.1145/3767295.3803621  | pdf: none
   - relevance: core — processing-in-memory によるトランザクション実行の加速(PIM×TP)
 
-- [ ] **Discard-Based Garbage Collection for Distributed Log-Structured Storage Systems in ByteDance** — Runhua Bian et al., FAST, 2026
+- [x] **Discard-Based Garbage Collection for Distributed Log-Structured Storage Systems in ByteDance** — Runhua Bian et al., FAST, 2026
   - id: dblp:conf/fast/BianZLZZGGGLZZC26  | added: 2026-07-06 | via: weekly-sweep
   - url: https://www.usenix.org/conference/fast26/presentation/bian  | pdf: none
   - relevance: core — 分散ログ構造化ストレージの GC(ByteDance 産業論文、log-structured)
